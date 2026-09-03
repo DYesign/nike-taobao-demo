@@ -4,6 +4,7 @@ const passwordForm = document.querySelector('#passwordForm');
 const passwordInput = document.querySelector('#passwordInput');
 const passwordError = document.querySelector('#passwordError');
 const scrollHeader = document.querySelector('#scrollHeader');
+const hero = document.querySelector('.hero');
 
 async function passwordDigest(value) {
   const bytes = new TextEncoder().encode(value);
@@ -26,11 +27,18 @@ passwordForm.addEventListener('submit', async (event) => {
 });
 
 function updateScrollHeader() {
-  scrollHeader.classList.toggle('visible', window.scrollY > 80);
+  const revealAt = Math.max(80, hero.offsetHeight - 150);
+  scrollHeader.classList.toggle('visible', window.scrollY > revealAt);
 }
 
 window.addEventListener('scroll', updateScrollHeader, { passive: true });
 updateScrollHeader();
+
+document.querySelectorAll('[data-scroll-target]').forEach((button) => {
+  button.addEventListener('click', () => {
+    document.querySelector(button.dataset.scrollTarget)?.scrollIntoView({ behavior: 'smooth' });
+  });
+});
 const current = document.querySelector('#current');
 const total = document.querySelector('#total');
 const count = slides.children.length;
