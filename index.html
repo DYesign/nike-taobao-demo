@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ededeb" />
+  <title>Nike Performance FTW</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="phone">
+    <section class="hero" aria-label="商品头图轮播">
+      <div class="slides" id="slides">
+        <figure class="slide"><img src="assets/shoe-head-1.png" alt="Nike 跑鞋主图" /></figure>
+        <figure class="slide"><img src="assets/shoe-head-2.png" alt="ZoomX 泡棉细节" /></figure>
+        <figure class="slide"><img src="assets/shoe-head-3.jpeg" alt="华夫格外底细节" /></figure>
+        <figure class="slide"><img src="assets/shoe-head-4.jpeg" alt="精制网眼鞋面细节" /></figure>
+        <figure class="slide"><img src="assets/shoe-head-5.jpeg" alt="Nike 跑鞋多角度视图" /></figure>
+      </div>
+      <div class="counter"><b id="current">1</b>/<span id="total">5</span></div>
+    </section>
+
+    <section class="commerce-info">
+      <div class="price-row"><div class="price"><small>¥</small>1399</div><span>已售 200+</span></div>
+      <h1><mark>天猫</mark>Nike 男子公路跑步鞋 ZoomX 回弹缓震运动鞋</h1>
+      <div class="trust-tags"><span>店铺一年回头客 200万+</span><span>官方正品保障</span></div>
+    </section>
+
+    <div class="section-gap" aria-hidden="true"></div>
+    <button class="vip-row"><span><b>88VIP</b> 百万大额商品 95 折，开 88VIP 一单回本</span><strong>去开通 ›</strong></button>
+
+    <section class="fulfillment">
+      <button><img class="info-icon" src="assets/icons/delivery.png" alt="" /><span><strong class="green">最快后日达</strong><small>预计今天发货，后天送达<br />送货上门｜多仓发货｜快递免运费</small></span><i>›</i></button>
+      <button><img class="info-icon" src="assets/icons/shield.png" alt="" /><span><strong class="brown">正品保障 · 假一赔四</strong><small>极速退款｜7天无理由退换｜上门取退</small></span><i>›</i></button>
+      <button><img class="info-icon" src="assets/icons/spec.png" alt="" /><span class="specs"><em><strong>低帮</strong><small>鞋帮高度</small></em><em><strong>公路跑</strong><small>运动类型</small></em><em><strong>Nike</strong><small>品牌</small></em><em><strong>男子</strong><small>适用性别</small></em></span><i>›</i></button>
+    </section>
+
+    <div class="section-gap" aria-hidden="true"></div>
+    <div class="detail-heading">宝贝详情</div>
+    <section class="detail" aria-label="商品详情长图">
+      <img src="assets/shoe-detail-long.jpeg" alt="Nike Performance FTW 完整商品详情" />
+    </section>
+    <footer class="buybar buybar-original">
+      <img src="assets/buybar-original.png" alt="店铺、客服、收藏、加入购物车、领券购买" />
+      <button class="buybar-hotspot cart" aria-label="加入购物车"></button>
+      <button class="buybar-hotspot buy" id="buyNow" aria-label="领券购买"></button>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
