@@ -6,6 +6,9 @@ const passwordError = document.querySelector('#passwordError');
 const scrollHeader = document.querySelector('#scrollHeader');
 const hero = document.querySelector('.hero');
 const heroNav = document.querySelector('.nav-top-image');
+const productDetail = document.querySelector('#productDetail');
+const detailSection = document.querySelector('.detail');
+const scrollTabs = [...document.querySelectorAll('[data-scroll-target]')];
 
 async function passwordDigest(value) {
   const bytes = new TextEncoder().encode(value);
@@ -32,6 +35,15 @@ function updateScrollHeader() {
   const shouldShow = window.scrollY > revealAt;
   scrollHeader.classList.toggle('visible', shouldShow);
   heroNav.classList.toggle('hidden', shouldShow);
+
+  const detailStart = productDetail.offsetTop - scrollHeader.offsetHeight;
+  const recommendStart = detailSection.offsetTop + detailSection.offsetHeight * 0.7;
+  const activeTarget = window.scrollY >= recommendStart ? 'recommend' : window.scrollY >= detailStart ? 'detail' : 'top';
+  scrollTabs.forEach((button) => {
+    const isActive = button.dataset.scrollTarget === activeTarget;
+    button.classList.toggle('active', isActive);
+    button.setAttribute('aria-selected', String(isActive));
+  });
 }
 
 window.addEventListener('scroll', updateScrollHeader, { passive: true });
@@ -39,7 +51,16 @@ updateScrollHeader();
 
 document.querySelectorAll('[data-scroll-target]').forEach((button) => {
   button.addEventListener('click', () => {
-    document.querySelector(button.dataset.scrollTarget)?.scrollIntoView({ behavior: 'smooth' });
+    const target = button.dataset.scrollTarget;
+    if (target === 'top') {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    if (target === 'detail') {
+      productDetail.scrollIntoView({ behavior: 'smooth' });
+      return;
+    }
+    window.scrollTo({ top: detailSection.offsetTop + detailSection.offsetHeight * 0.7, behavior: 'smooth' });
   });
 });
 const current = document.querySelector('#current');
