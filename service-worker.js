@@ -1,4 +1,4 @@
-const CACHE_NAME = 'nike-pdp-v16';
+const CACHE_NAME = 'nike-pdp-v17';
 const APP_SHELL = [
   './',
   './index.html',
@@ -15,7 +15,11 @@ const APP_SHELL = [
   './assets/nav-top-but.png',
   './assets/scroll-nav-top-but.png',
   './assets/search-icon.svg',
-  './assets/detail-intro.png'
+  './assets/detail-intro.png',
+  './assets/list-01.png',
+  './assets/list-02.png',
+  './assets/list-03.png',
+  './assets/list-04.png'
 ];
 
 self.addEventListener('install', (event) => {
