@@ -48,3 +48,7 @@ function notify(message) {
 
 document.querySelector('.cart').addEventListener('click', () => notify('已加入购物车'));
 document.querySelector('#buyNow').addEventListener('click', () => notify('请选择尺码'));
+
+if ('serviceWorker' in navigator && location.protocol.startsWith('http')) {
+  window.addEventListener('load', () => navigator.serviceWorker.register('./service-worker.js'));
+}
