@@ -9,7 +9,8 @@
   <title>Nike 商品列表</title>
   <link rel="manifest" href="manifest.webmanifest" />
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
-  <link rel="stylesheet" href="list.css?v=17" />
+  <link rel="stylesheet" href="list.css?v=18" />
+  <link rel="stylesheet" href="list-overrides.css?v=18" />
 </head>
 <body>
   <section class="password-gate" id="passwordGate" aria-label="访问验证">
@@ -18,12 +19,11 @@
   <main class="catalog">
     <header class="catalog-head">
       <div class="status-space" aria-hidden="true"></div>
-      <div class="search-row"><button class="back" aria-label="返回">‹</button><div class="search"><img src="assets/search-icon.svg" alt="" /><span>Nike 跑鞋</span></div><button class="list-mode" aria-label="列表视图"><i></i><i></i><i></i></button><button class="cart-mini" aria-label="购物车">♧<b>82</b></button></div>
-      <nav class="sorts" aria-label="商品排序"><button class="active" data-sort="default">综合</button><button data-sort="sales">销量</button><button data-sort="new">上新</button><button data-sort="price">价格 ↕</button><button class="grid-button" aria-label="筛选">⌘</button></nav>
+      <div class="nav-shot"><img src="assets/list-nav.png" alt="搜索、分类、购物车和商品排序导航" /><nav class="nav-hotspots" aria-label="商品排序"><button data-sort="default" aria-label="综合排序"></button><button data-sort="sales" aria-label="销量排序"></button><button data-sort="new" aria-label="上新排序"></button><button data-sort="price" aria-label="价格排序"></button></nav></div>
     </header>
     <div class="deal-line"><span>限时红包</span><b id="countdown">22:31</b></div>
     <section class="product-grid" id="productGrid" aria-label="Nike 商品列表"></section>
   </main>
-  <script src="list.js?v=17"></script>
+  <script src="list.js?v=18"></script>
 </body>
 </html>
