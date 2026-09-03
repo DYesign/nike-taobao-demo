@@ -3,6 +3,7 @@ const passwordGate = document.querySelector('#passwordGate');
 const passwordForm = document.querySelector('#passwordForm');
 const passwordInput = document.querySelector('#passwordInput');
 const passwordError = document.querySelector('#passwordError');
+const scrollHeader = document.querySelector('#scrollHeader');
 
 async function passwordDigest(value) {
   const bytes = new TextEncoder().encode(value);
@@ -23,6 +24,13 @@ passwordForm.addEventListener('submit', async (event) => {
   passwordError.textContent = '密码不正确，请重新输入';
   passwordInput.select();
 });
+
+function updateScrollHeader() {
+  scrollHeader.classList.toggle('visible', window.scrollY > 80);
+}
+
+window.addEventListener('scroll', updateScrollHeader, { passive: true });
+updateScrollHeader();
 const current = document.querySelector('#current');
 const total = document.querySelector('#total');
 const count = slides.children.length;
