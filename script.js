@@ -5,6 +5,7 @@ const passwordInput = document.querySelector('#passwordInput');
 const passwordError = document.querySelector('#passwordError');
 const scrollHeader = document.querySelector('#scrollHeader');
 const hero = document.querySelector('.hero');
+const heroNav = document.querySelector('.nav-top-image');
 
 async function passwordDigest(value) {
   const bytes = new TextEncoder().encode(value);
@@ -28,7 +29,9 @@ passwordForm.addEventListener('submit', async (event) => {
 
 function updateScrollHeader() {
   const revealAt = Math.max(80, hero.offsetHeight - 150);
-  scrollHeader.classList.toggle('visible', window.scrollY > revealAt);
+  const shouldShow = window.scrollY > revealAt;
+  scrollHeader.classList.toggle('visible', shouldShow);
+  heroNav.classList.toggle('hidden', shouldShow);
 }
 
 window.addEventListener('scroll', updateScrollHeader, { passive: true });
