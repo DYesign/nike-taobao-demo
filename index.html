@@ -8,6 +8,15 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <section class="password-gate" id="passwordGate" aria-label="访问验证">
+    <form class="password-card" id="passwordForm">
+      <h1>Nike Demo</h1>
+      <p>请输入访问密码</p>
+      <input id="passwordInput" type="password" autocomplete="current-password" placeholder="访问密码" required />
+      <button type="submit">进入 Demo</button>
+      <small id="passwordError" role="alert"></small>
+    </form>
+  </section>
   <main class="phone">
     <section class="hero" aria-label="商品头图轮播">
       <div class="slides" id="slides">
