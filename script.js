@@ -9,6 +9,11 @@ const heroNav = document.querySelector('.nav-top-image');
 const productDetail = document.querySelector('#productDetail');
 const detailSection = document.querySelector('.detail');
 const scrollTabs = [...document.querySelectorAll('[data-scroll-target]')];
+const pdpBack = document.querySelector('#pdpBack');
+
+pdpBack.addEventListener('click', () => {
+  window.location.href = 'list.html';
+});
 
 async function passwordDigest(value) {
   const bytes = new TextEncoder().encode(value);

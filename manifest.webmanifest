@@ -2,7 +2,7 @@
   "name": "Nike PDP Demo",
   "short_name": "Nike PDP",
   "description": "Nike 淘宝商品详情页演示",
-  "start_url": "./",
+  "start_url": "./list.html",
   "scope": "./",
   "display": "standalone",
   "orientation": "portrait",

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Nike 商品列表</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="list.css" />
+</head>
+<body>
+  <section class="password-gate" id="passwordGate" aria-label="访问验证">
+    <form class="password-card" id="passwordForm"><h1>Nike Demo</h1><p>请输入访问密码</p><input id="passwordInput" type="password" autocomplete="current-password" placeholder="访问密码" required /><button type="submit">进入 Demo</button><small id="passwordError" role="alert"></small></form>
+  </section>
+  <main class="catalog">
+    <header class="catalog-head">
+      <div class="status-space" aria-hidden="true"></div>
+      <div class="search-row"><button class="back" aria-label="返回">‹</button><div class="search"><img src="assets/search-icon.svg" alt="" /><span>Nike 跑鞋</span></div><button class="list-mode" aria-label="列表视图"><i></i><i></i><i></i></button><button class="cart-mini" aria-label="购物车">♧<b>82</b></button></div>
+      <nav class="sorts" aria-label="商品排序"><button class="active" data-sort="default">综合</button><button data-sort="sales">销量</button><button data-sort="new">上新</button><button data-sort="price">价格 ↕</button><button class="grid-button" aria-label="筛选">⌘</button></nav>
+    </header>
+    <div class="deal-line"><span>限时红包</span><b id="countdown">22:31</b></div>
+    <section class="product-grid" id="productGrid" aria-label="Nike 商品列表"></section>
+  </main>
+  <script src="list.js"></script>
+</body>
+</html>
