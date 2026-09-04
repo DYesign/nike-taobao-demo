@@ -1,6 +1,9 @@
 .pdp-back-hotspot{position:fixed;z-index:50;top:0;left:max(calc(50% - 215px),0px);width:76px;height:124px;padding:0;border:0;background:transparent;cursor:pointer;touch-action:manipulation}
 .detail-intro{position:relative;z-index:2;display:block;width:100%;background:#fff}
 .detail-intro img{display:block;width:100%;height:auto}
+.shared-recommendations{width:100%;background:#fff}
+.shared-recommendations[hidden]{display:none}
+.shared-recommendations img{display:block;width:100%;height:auto}
 @media(max-width:430px){.pdp-back-hotspot{left:0}}
 @media(min-width:700px){.pdp-back-hotspot{top:28px}}
 @media(display-mode:standalone){.phone{margin-top:0!important}}

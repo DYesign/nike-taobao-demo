@@ -10,6 +10,7 @@ const hero = document.querySelector('.hero');
 const heroNavs = [...document.querySelectorAll('.nav-top-image')];
 const productDetail = document.querySelector('#productDetail');
 const detailSection = document.querySelector('.detail');
+const sharedRecommendations = document.querySelector('#sharedRecommendations');
 const scrollTabs = [...document.querySelectorAll('[data-scroll-target]')];
 const pdpBack = document.querySelector('#pdpBack');
 
@@ -26,8 +27,9 @@ slides.querySelectorAll('img').forEach((image) => image.addEventListener('error'
 document.querySelector('#productPrice').innerHTML = `<small>¥</small>${product.price}`;
 document.querySelector('#productSold').textContent = product.sold;
 document.querySelector('#productTitle').textContent = product.title;
-document.querySelector('#detailImage').src = product.detail;
-document.querySelector('#detailImage').alt = product.detailAlt;
+const detailSources = product.detailParts || [product.detail];
+detailSection.innerHTML = detailSources.map((src, index) => `<img src="${src}" alt="${index === 0 ? product.detailAlt : ''}" loading="lazy" decoding="async" />`).join('');
+sharedRecommendations.hidden = !product.appendSharedRecommendations;
 ['#specOne','#specTwo','#specThree','#specFour'].forEach((selector, index) => { document.querySelector(selector).textContent = product.specs[index]; });
 
 pdpBack.addEventListener('click', () => {
@@ -65,7 +67,9 @@ function updateScrollHeader() {
   heroNavs.forEach((heroNav) => heroNav.classList.toggle('hidden', shouldShow));
 
   const detailStart = productDetail.offsetTop - scrollHeader.offsetHeight;
-  const recommendStart = detailSection.offsetTop + detailSection.offsetHeight * 0.7;
+  const recommendStart = product.appendSharedRecommendations
+    ? sharedRecommendations.offsetTop - scrollHeader.offsetHeight
+    : detailSection.offsetTop + detailSection.offsetHeight * 0.7;
   const activeTarget = window.scrollY >= recommendStart ? 'recommend' : window.scrollY >= detailStart ? 'detail' : 'top';
   scrollTabs.forEach((button) => {
     const isActive = button.dataset.scrollTarget === activeTarget;
@@ -88,7 +92,10 @@ document.querySelectorAll('[data-scroll-target]').forEach((button) => {
       productDetail.scrollIntoView({ behavior: 'smooth' });
       return;
     }
-    window.scrollTo({ top: detailSection.offsetTop + detailSection.offsetHeight * 0.7, behavior: 'smooth' });
+    const recommendationTop = product.appendSharedRecommendations
+      ? sharedRecommendations.offsetTop
+      : detailSection.offsetTop + detailSection.offsetHeight * 0.7;
+    window.scrollTo({ top: recommendationTop, behavior: 'smooth' });
   });
 });
 const current = document.querySelector('#current');
