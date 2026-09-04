@@ -1,0 +1,22 @@
+/* Safari/WAP already provides its own status area, so remove the duplicate
+   transparent space baked into the app navigation artwork. */
+.browser-mode .scroll-header-main {
+  height: 78px;
+  aspect-ratio: auto;
+  overflow: hidden;
+}
+
+.browser-mode .scroll-header-main > img {
+  width: 100%;
+  height: auto;
+  transform: translateY(-52px);
+}
+
+.browser-mode .scroll-search {
+  top: 22px;
+  height: 32px;
+}
+
+.browser-mode .scroll-tabs {
+  height: 42px;
+}
