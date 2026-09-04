@@ -11,6 +11,19 @@ const detailSection = document.querySelector('.detail');
 const scrollTabs = [...document.querySelectorAll('[data-scroll-target]')];
 const pdpBack = document.querySelector('#pdpBack');
 
+const params = new URLSearchParams(location.search);
+const product = window.NIKE_PRODUCTS.find((item) => item.id === params.get('product')) || window.NIKE_PRODUCTS[0];
+document.title = product.shortTitle;
+slides.innerHTML = product.hero.map((src, index) => `<figure class="slide"><img src="${src}" alt="${product.shortTitle} ${index + 1}" /></figure>`).join('');
+document.querySelector('#productPrice').innerHTML = `<small>¥</small>${product.price}`;
+document.querySelector('#productSold').textContent = product.sold;
+document.querySelector('#productTitle').textContent = product.title;
+document.querySelector('#detailImage').src = product.detail;
+document.querySelector('#detailImage').alt = product.detailAlt;
+document.querySelector('#detailSection').classList.toggle('dynamic', !product.legacyDetail);
+document.querySelector('#productDetail').classList.toggle('condensed', !product.legacyDetail);
+['#specOne','#specTwo','#specThree','#specFour'].forEach((selector, index) => { document.querySelector(selector).textContent = product.specs[index]; });
+
 pdpBack.addEventListener('click', () => {
   if (window.parent !== window) {
     window.parent.postMessage({ type: 'close-nike-pdp' }, location.origin);
