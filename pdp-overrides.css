@@ -4,3 +4,13 @@
 @media(max-width:430px){.pdp-back-hotspot{left:0}}
 @media(min-width:700px){.pdp-back-hotspot{top:28px}}
 @media(display-mode:standalone){.phone{margin-top:0!important}}
+.commerce-info{padding:16px 15px 14px}
+.commerce-info h1{margin:11px 0 12px;font-size:17px;font-weight:600;line-height:1.42;letter-spacing:-.2px}
+.price{font-size:32px;font-weight:700}
+.price small{font-size:18px}
+.trust-tags span{padding:6px 9px;font-size:12px}
+body{overflow-x:hidden}
+.phone{transition:transform .27s cubic-bezier(.22,.72,.18,1),opacity .27s ease;will-change:transform}
+.phone.page-enter-right{transform:translateX(100%);opacity:.96}
+.phone.page-leave-right{transform:translateX(100%);opacity:.96}
+@media(prefers-reduced-motion:reduce){.phone{transition:none}}
