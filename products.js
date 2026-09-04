@@ -55,8 +55,9 @@ window.NIKE_PRODUCTS = [
     subtitle: '轻盈透气 干爽舒适',
     price: 599,
     sold: '已售 400+',
-    hero: ['assets/products/performance-app/hero-1.png','assets/products/performance-app/hero-2.jpeg','assets/products/performance-app/hero-3.png','assets/products/performance-app/hero-4.jpeg','assets/products/performance-app/hero-5.png?v=36','assets/products/performance-app/hero-6.png','assets/products/performance-app/hero-7.png'],
-    detail: 'assets/products/performance-app/detail.jpeg?v=46',
+    hero: ['assets/products/t4-performance-app/hero/01.jpg','assets/products/t4-performance-app/hero/02.jpg','assets/products/t4-performance-app/hero/03.jpg','assets/products/t4-performance-app/hero/04.jpg','assets/products/t4-performance-app/hero/05.jpg','assets/products/t4-performance-app/hero/06.jpg','assets/products/t4-performance-app/hero/07.jpg'],
+    detailParts: ['assets/products/t4-performance-app/detail/01.jpg','assets/products/t4-performance-app/detail/02.jpg','assets/products/t4-performance-app/detail/03.jpg','assets/products/t4-performance-app/detail/04.jpg','assets/products/t4-performance-app/detail/05.jpg','assets/products/t4-performance-app/detail/06.jpg','assets/products/t4-performance-app/detail/07.jpg','assets/products/t4-performance-app/detail/08.jpg','assets/products/t4-performance-app/detail/09.jpg','assets/products/t4-performance-app/detail/10.jpg'],
+    appendSharedRecommendations: true,
     detailAlt: 'Nike AeroSwift 完整商品详情',
     specs: ['短款','跑步','Nike','女子']
   },
