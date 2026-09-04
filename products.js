@@ -68,8 +68,9 @@ window.NIKE_PRODUCTS = [
     subtitle: 'Y2K 复古风格 Air Zoom 缓震',
     price: 719,
     sold: '已售 100+',
-    hero: ['assets/products/lifestyle-ftw/hero-1.png','assets/products/lifestyle-ftw/hero-2.jpeg','assets/products/lifestyle-ftw/hero-3.png','assets/products/lifestyle-ftw/hero-4.jpeg','assets/products/lifestyle-ftw/hero-5.png'],
-    detail: 'assets/products/lifestyle-ftw/detail.jpeg?v=46',
+    hero: ['assets/products/upload-lifestyle-ftw/hero/01.jpg','assets/products/upload-lifestyle-ftw/hero/02.jpg','assets/products/upload-lifestyle-ftw/hero/03.jpg','assets/products/upload-lifestyle-ftw/hero/04.jpg','assets/products/upload-lifestyle-ftw/hero/05.jpg','assets/products/upload-lifestyle-ftw/hero/06.jpg','assets/products/upload-lifestyle-ftw/hero/07.jpg'],
+    detailParts: ['assets/products/upload-lifestyle-ftw/detail/01.jpg','assets/products/upload-lifestyle-ftw/detail/02.jpg','assets/products/upload-lifestyle-ftw/detail/03.jpg','assets/products/upload-lifestyle-ftw/detail/04.jpg','assets/products/upload-lifestyle-ftw/detail/05.jpg','assets/products/upload-lifestyle-ftw/detail/06.jpg','assets/products/upload-lifestyle-ftw/detail/07.jpg'],
+    appendSharedRecommendations: true,
     detailAlt: 'Nike Zoom Skylon 11 完整商品详情',
     specs: ['低帮','休闲','Nike','女子']
   },
@@ -80,8 +81,9 @@ window.NIKE_PRODUCTS = [
     subtitle: '顺滑舒适 宽松版型',
     price: 299,
     sold: '已售 300+',
-    hero: ['assets/products/lifestyle-app/hero-1.png','assets/products/lifestyle-app/hero-2.png','assets/products/lifestyle-app/hero-3.png','assets/products/lifestyle-app/hero-4.jpeg','assets/products/lifestyle-app/hero-5.png','assets/products/lifestyle-app/hero-6.png'],
-    detail: 'assets/products/lifestyle-app/detail.jpeg?v=46',
+    hero: ['assets/products/upload-lifestyle-app/hero/01.jpg','assets/products/upload-lifestyle-app/hero/02.jpg','assets/products/upload-lifestyle-app/hero/03.jpg','assets/products/upload-lifestyle-app/hero/04.jpg','assets/products/upload-lifestyle-app/hero/05.jpg','assets/products/upload-lifestyle-app/hero/06.jpg'],
+    detailParts: ['assets/products/upload-lifestyle-app/detail/01.jpg','assets/products/upload-lifestyle-app/detail/02.jpg','assets/products/upload-lifestyle-app/detail/03.jpg','assets/products/upload-lifestyle-app/detail/04.jpg','assets/products/upload-lifestyle-app/detail/05.jpg','assets/products/upload-lifestyle-app/detail/06.jpg','assets/products/upload-lifestyle-app/detail/07.jpg','assets/products/upload-lifestyle-app/detail/08.jpg','assets/products/upload-lifestyle-app/detail/09.jpg'],
+    appendSharedRecommendations: true,
     detailAlt: 'Nike Sportswear 男子短袖 T 恤完整商品详情',
     specs: ['短袖','休闲','Nike','男子']
   }
