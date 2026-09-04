@@ -110,7 +110,7 @@ window.NIKE_PRODUCTS = [
     subtitle: '顺滑舒适 宽松版型',
     price: 299,
     sold: '已售 300+',
-    hero: ['assets/products/upload-lifestyle-app/hero/01.jpg','assets/products/upload-lifestyle-app/hero/02.jpg','assets/products/upload-lifestyle-app/hero/03.jpg','assets/products/upload-lifestyle-app/hero/04.jpg','assets/products/upload-lifestyle-app/hero/05.jpg','assets/products/upload-lifestyle-app/hero/06.jpg'],
+    hero: ['assets/products/lifestyle-app-v59/hero/01.jpg','assets/products/lifestyle-app-v59/hero/02.jpg','assets/products/lifestyle-app-v59/hero/03.jpg','assets/products/lifestyle-app-v59/hero/04.jpg','assets/products/lifestyle-app-v59/hero/05.jpg'],
     detailParts: ['assets/products/details-v55/sportswear-tee/01.jpg','assets/products/details-v55/sportswear-tee/02.jpg','assets/products/details-v55/sportswear-tee/03.jpg','assets/products/details-v55/sportswear-tee/04.jpg','assets/products/details-v55/sportswear-tee/05.jpg','assets/products/details-v55/sportswear-tee/06.jpg','assets/products/details-v55/sportswear-tee/07.jpg','assets/products/details-v55/sportswear-tee/08.jpg','assets/products/details-v55/sportswear-tee/09.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike Sportswear 男子短袖 T 恤完整商品详情',
