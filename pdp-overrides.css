@@ -3,3 +3,4 @@
 .detail-intro img{display:block;width:100%;height:auto}
 @media(max-width:430px){.pdp-back-hotspot{left:0}}
 @media(min-width:700px){.pdp-back-hotspot{top:28px}}
+@media(display-mode:standalone){.phone{margin-top:0!important}}
