@@ -8,6 +8,14 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Nike PDP" />
   <script>
+    try {
+      if (sessionStorage.getItem('nike-demo-access') === 'granted') {
+        document.documentElement.classList.add('access-granted');
+      }
+    } catch (_) {}
+  </script>
+  <style>.access-granted .password-gate{display:none!important}</style>
+  <script>
     if (window.top === window && !new URLSearchParams(location.search).has('product')) {
       location.replace('./list.html');
     }
@@ -86,7 +94,7 @@
     </footer>
     <div class="toast" id="toast" role="status"></div>
   </main>
-  <script src="products.js?v=45"></script>
-  <script src="script.js?v=45"></script>
+  <script src="products.js?v=46"></script>
+  <script src="script.js?v=46"></script>
 </body>
 </html>
