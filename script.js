@@ -1,4 +1,5 @@
 const slides = document.querySelector('#slides');
+window.setupNikeInstallGate();
 const passwordGate = document.querySelector('#passwordGate');
 const passwordForm = document.querySelector('#passwordForm');
 const passwordInput = document.querySelector('#passwordInput');

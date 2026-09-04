@@ -1,4 +1,5 @@
 const products=window.NIKE_PRODUCTS.map((product,index)=>({...product,image:product.hero[0],index}));
+window.setupNikeInstallGate();
 const grid=document.querySelector('#productGrid');
 const catalogHead=document.querySelector('.catalog-head');
 let navTicking=false;

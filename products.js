@@ -19,7 +19,7 @@ window.NIKE_PRODUCTS = [
     subtitle: '轻盈透气 干爽舒适',
     price: 599,
     sold: '已售 400+',
-    hero: ['assets/products/performance-app/hero-1.png','assets/products/performance-app/hero-2.jpeg','assets/products/performance-app/hero-3.png','assets/products/performance-app/hero-4.jpeg','assets/products/performance-app/hero-5.png'],
+    hero: ['assets/products/performance-app/hero-1.png','assets/products/performance-app/hero-2.jpeg','assets/products/performance-app/hero-3.png','assets/products/performance-app/hero-4.jpeg','assets/products/performance-app/hero-5.png','assets/products/performance-app/hero-6.png','assets/products/performance-app/hero-7.png'],
     detail: 'assets/products/performance-app/detail.jpeg',
     detailAlt: 'Nike AeroSwift 完整商品详情',
     specs: ['短款','跑步','Nike','女子']
@@ -43,9 +43,28 @@ window.NIKE_PRODUCTS = [
     subtitle: '顺滑舒适 宽松版型',
     price: 299,
     sold: '已售 300+',
-    hero: ['assets/products/lifestyle-app/hero-1.png','assets/products/lifestyle-app/hero-2.png','assets/products/lifestyle-app/hero-3.png','assets/products/lifestyle-app/hero-4.jpeg','assets/products/lifestyle-app/hero-5.png'],
+    hero: ['assets/products/lifestyle-app/hero-1.png','assets/products/lifestyle-app/hero-2.png','assets/products/lifestyle-app/hero-3.png','assets/products/lifestyle-app/hero-4.jpeg','assets/products/lifestyle-app/hero-5.png','assets/products/lifestyle-app/hero-6.png'],
     detail: 'assets/products/lifestyle-app/detail.jpeg',
     detailAlt: 'Nike Sportswear 男子短袖 T 恤完整商品详情',
     specs: ['短袖','休闲','Nike','男子']
   }
 ];
+
+window.setupNikeInstallGate = function () {
+  const gate = document.querySelector('#installGate');
+  if (!gate) return;
+  const ua = navigator.userAgent;
+  const isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  const isStandalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+  if (!isIOS || isStandalone) return;
+  const isSafari = /Safari/.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS/.test(ua);
+  gate.classList.add('visible');
+  document.documentElement.classList.add('install-required');
+  gate.querySelector('[data-safari]').hidden = !isSafari;
+  gate.querySelector('[data-other]').hidden = isSafari;
+  const copy = gate.querySelector('[data-copy]');
+  copy?.addEventListener('click', async () => {
+    await navigator.clipboard.writeText(location.href);
+    copy.textContent = '链接已复制';
+  });
+};

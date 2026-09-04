@@ -11,8 +11,12 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
   <link rel="stylesheet" href="list.css?v=18" />
   <link rel="stylesheet" href="list-overrides.css?v=24" />
+  <link rel="stylesheet" href="install.css?v=25" />
 </head>
 <body>
+  <section class="install-gate" id="installGate" aria-label="安装 Nike Demo">
+    <div class="install-card"><div class="nike-mark">NIKE</div><div data-safari><h1>添加到手机桌面</h1><p>安装后会以全屏 App 方式打开，不显示浏览器顶部和底部。</p><div class="install-steps"><div>点击 Safari 底部的“分享”按钮</div><div>向下滑动，选择“添加到主屏幕”</div><div>点击右上角“添加”</div></div><span class="install-note">受 iOS 限制，网页无法代替你自动点击“添加到主屏幕”。</span></div><div data-other><h1>请使用 Safari 打开</h1><p>复制当前链接，在 Safari 中粘贴打开，再按照提示添加到手机桌面。</p><div class="install-steps"><div>复制当前页面链接</div><div>打开 Safari 并粘贴链接</div><div>选择“添加到主屏幕”</div></div><button type="button" data-copy>复制链接</button></div></div>
+  </section>
   <section class="password-gate" id="passwordGate" aria-label="访问验证">
     <form class="password-card" id="passwordForm"><h1>Nike Demo</h1><p>请输入访问密码</p><input id="passwordInput" type="password" autocomplete="current-password" placeholder="访问密码" required /><button type="submit">进入 Demo</button><small id="passwordError" role="alert"></small></form>
   </section>
@@ -23,7 +27,7 @@
     <div class="deal-line"><span>限时红包</span><b id="countdown">22:31</b></div>
     <section class="product-grid" id="productGrid" aria-label="Nike 商品列表"></section>
   </main>
-  <script src="products.js?v=24"></script>
-  <script src="list.js?v=24"></script>
+  <script src="products.js?v=25"></script>
+  <script src="list.js?v=25"></script>
 </body>
 </html>
