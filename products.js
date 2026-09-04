@@ -57,10 +57,28 @@ window.setupNikeInstallGate = function () {
   const isStandalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
   if (!isIOS || isStandalone) return;
   const isSafari = /Safari/.test(ua) && !/CriOS|FxiOS|EdgiOS|OPiOS/.test(ua);
+  gate.innerHTML = isSafari ? `
+    <div class="install-card">
+      <img class="nike-logo" src="assets/nike-logo.svg" alt="Nike" />
+      <h1>添加到手机桌面</h1>
+      <div class="install-steps">
+        <article><b>1</b><div><strong>共享</strong><span>点击 Safari 的“…”菜单，选择“共享”</span></div><img src="assets/install-share.jpg" alt="Safari 共享菜单中的共享按钮" /></article>
+        <article><b>2</b><div><strong>添加到主屏幕</strong><span>在共享菜单中找到并点击这一项</span></div><img src="assets/install-home-screen.jpg" alt="共享菜单中的添加到主屏幕按钮" /></article>
+        <article class="compact-step"><b>3</b><div><strong>添加</strong><span>最后点击右上角的“添加”</span></div></article>
+      </div>
+    </div>` : `
+    <div class="install-card">
+      <img class="nike-logo" src="assets/nike-logo.svg" alt="Nike" />
+      <h1>请使用 Safari 打开</h1>
+      <div class="install-steps simple-steps">
+        <article><b>1</b><div><strong>复制当前链接</strong></div></article>
+        <article><b>2</b><div><strong>在 Safari 中粘贴打开</strong></div></article>
+        <article><b>3</b><div><strong>按照提示添加到主屏幕</strong></div></article>
+      </div>
+      <button type="button" data-copy>复制链接</button>
+    </div>`;
   gate.classList.add('visible');
   document.documentElement.classList.add('install-required');
-  gate.querySelector('[data-safari]').hidden = !isSafari;
-  gate.querySelector('[data-other]').hidden = isSafari;
   const copy = gate.querySelector('[data-copy]');
   copy?.addEventListener('click', async () => {
     await navigator.clipboard.writeText(location.href);
