@@ -1,5 +1,5 @@
 .pdp-back-hotspot{position:fixed;z-index:50;top:0;left:max(calc(50% - 215px),0px);width:54px;height:88px;padding:0;border:0;background:transparent;cursor:pointer}
-.detail-intro{display:block;width:100%;background:#fff}
+.detail-intro{position:relative;z-index:2;display:block;width:100%;background:#fff}
 .detail-intro img{display:block;width:100%;height:auto}
 @media(max-width:430px){.pdp-back-hotspot{left:0}}
 @media(min-width:700px){.pdp-back-hotspot{top:28px}}
@@ -9,7 +9,7 @@
 .price{font-size:32px;font-weight:700}
 .price small{font-size:18px}
 .trust-tags span{padding:6px 9px;font-size:12px}
-.detail{height:auto;aspect-ratio:auto;overflow:hidden}
+.detail{position:relative;z-index:1;height:auto;aspect-ratio:auto;overflow:hidden}
 .detail img{display:block;width:100%;height:auto;transform:none}
 body{overflow-x:hidden}
 html{scrollbar-width:none}
