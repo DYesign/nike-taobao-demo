@@ -84,7 +84,7 @@ window.NIKE_PRODUCTS = [
     subtitle: 'Dri-FIT ADV 轻盈透气',
     price: 599,
     sold: '已售 400+',
-    hero: ['assets/products/t4-performance-app/hero/01.jpg','assets/products/t4-performance-app/hero/02.jpg','assets/products/t4-performance-app/hero/03.jpg','assets/products/t4-performance-app/hero/04.jpg','assets/products/t4-performance-app/hero/05.jpg','assets/products/t4-performance-app/hero/06.jpg','assets/products/t4-performance-app/hero/07.jpg'],
+    hero: ['assets/products/t4-performance-app/hero/01.jpg','assets/products/t4-performance-app/hero/02.jpg','assets/products/t4-performance-app/hero/03.jpg','assets/products/t4-performance-app/hero/04.jpg','assets/products/t4-performance-app-v62/hero/05.jpg','assets/products/t4-performance-app-v62/hero/06.jpg','assets/products/t4-performance-app-v62/hero/07.jpg'],
     detailParts: ['assets/products/details-v55/aeroswift-t4/01.jpg','assets/products/details-v55/aeroswift-t4/02.jpg','assets/products/details-v55/aeroswift-t4/03.jpg','assets/products/details-v55/aeroswift-t4/04.jpg','assets/products/details-v55/aeroswift-t4/05.jpg','assets/products/details-v55/aeroswift-t4/06.jpg','assets/products/details-v55/aeroswift-t4/07.jpg','assets/products/details-v55/aeroswift-t4/08.jpg','assets/products/details-v55/aeroswift-t4/09.jpg','assets/products/details-v55/aeroswift-t4/10.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike AeroSwift T4 完整商品详情',
