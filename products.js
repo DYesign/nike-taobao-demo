@@ -118,6 +118,19 @@ window.NIKE_PRODUCTS = [
   }
 ];
 
+const NIKE_PRODUCT_ORDER = [
+  'pegasus-premium',
+  'aeroswift-t4',
+  'zoom-skylon-11',
+  'sportswear-tee',
+  'nike-acc-1-backpack',
+  'nike-acc-2-backpack',
+  'aeroswift',
+  'nike-air-force-1-07-polka-dot',
+  'jordan-luka-77-pf',
+];
+window.NIKE_PRODUCTS.sort((a, b) => NIKE_PRODUCT_ORDER.indexOf(a.id) - NIKE_PRODUCT_ORDER.indexOf(b.id));
+
 window.setupNikeInstallGate = function () {
   const gate = document.querySelector('#installGate');
   if (!gate) return;
