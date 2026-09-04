@@ -1,7 +1,6 @@
 .pdp-back-hotspot{position:fixed;z-index:50;top:0;left:max(calc(50% - 215px),0px);width:54px;height:88px;padding:0;border:0;background:transparent;cursor:pointer}
 .detail-intro{display:block;width:100%;background:#fff}
 .detail-intro img{display:block;width:100%;height:auto}
-.detail-intro.condensed{height:58px;overflow:hidden}
 @media(max-width:430px){.pdp-back-hotspot{left:0}}
 @media(min-width:700px){.pdp-back-hotspot{top:28px}}
 @media(display-mode:standalone){.phone{margin-top:0!important}}
