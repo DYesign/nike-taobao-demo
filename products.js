@@ -59,7 +59,7 @@ window.NIKE_PRODUCTS = [
     price: 1399,
     sold: '已售 200+',
     hero: ['assets/products/t4-performance-ftw/hero/01.jpg','assets/products/t4-performance-ftw/hero/02.jpg','assets/products/t4-performance-ftw/hero/03.jpg','assets/products/t4-performance-ftw/hero/04.jpg','assets/products/t4-performance-ftw/hero/05.jpg'],
-    detailParts: ['assets/products/details-v55/pegasus-premium/01.jpg','assets/products/details-v55/pegasus-premium/02.jpg','assets/products/details-v55/pegasus-premium/03.jpg','assets/products/details-v55/pegasus-premium/04.jpg','assets/products/details-v55/pegasus-premium/05.jpg','assets/products/details-v55/pegasus-premium/06.jpg','assets/products/details-v55/pegasus-premium/07.jpg'],
+    detailParts: ['assets/products/pegasus-premium-v60/detail/01.jpg','assets/products/pegasus-premium-v60/detail/02.jpg','assets/products/pegasus-premium-v60/detail/03.jpg','assets/products/pegasus-premium-v60/detail/04.jpg','assets/products/pegasus-premium-v60/detail/05.jpg','assets/products/pegasus-premium-v60/detail/06.jpg','assets/products/pegasus-premium-v60/detail/07.jpg','assets/products/pegasus-premium-v60/detail/08.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike Pegasus Premium 完整商品详情',
     specs: ['低帮','公路跑','Nike','男子'],
