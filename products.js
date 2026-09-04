@@ -52,6 +52,9 @@ window.NIKE_PRODUCTS = [
 window.setupNikeInstallGate = function () {
   const gate = document.querySelector('#installGate');
   if (!gate) return;
+  gate.classList.remove('visible');
+  document.documentElement.classList.remove('install-required');
+  gate.replaceChildren();
   const ua = navigator.userAgent;
   const isIOS = /iPad|iPhone|iPod/.test(ua) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
   const isStandalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;

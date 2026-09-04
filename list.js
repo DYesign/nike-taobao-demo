@@ -11,8 +11,7 @@ function openPdp(productId){
   pdpLayer.className='pdp-layer';
   pdpLayer.innerHTML=`<iframe src="index.html?embedded=1&product=${encodeURIComponent(productId)}" title="Nike 商品详情"></iframe>`;
   document.body.appendChild(pdpLayer);
-  const frame=pdpLayer.querySelector('iframe');
-  frame.addEventListener('load',()=>requestAnimationFrame(()=>requestAnimationFrame(()=>pdpLayer?.classList.add('open'))),{once:true});
+  requestAnimationFrame(()=>requestAnimationFrame(()=>pdpLayer?.classList.add('open')));
 }
 function closePdp(){
   if(!pdpLayer)return;
@@ -22,10 +21,9 @@ function closePdp(){
   setTimeout(()=>closingLayer.remove(),340);
 }
 addEventListener('message',event=>{if(event.origin===location.origin&&event.data?.type==='close-nike-pdp')closePdp()});
-function render(items){grid.innerHTML=items.map((p,index)=>`<article class="product-card" data-product="${p.id}" tabindex="0" role="link"><div class="photo"><img src="${p.image}" alt="${p.shortTitle}"></div><div class="product-copy"><h2 class="product-title">${p.shortTitle}</h2><p class="subline">${p.subtitle}</p><div class="price-row">¥<strong>${p.price}</strong><small>补贴后</small><span class="sold">${p.sold}</span></div><div class="meta-shot"><img src="assets/list-meta-${index%2?'right':'left'}.png" alt="限时红包、小黑盒新品和购物车" /></div></div></article>`).join('')}
+function render(items){grid.innerHTML=items.map((p,index)=>`<a class="product-card" data-product="${p.id}" href="index.html?product=${encodeURIComponent(p.id)}&from=list"><div class="photo"><img src="${p.image}" alt="${p.shortTitle}"></div><div class="product-copy"><h2 class="product-title">${p.shortTitle}</h2><p class="subline">${p.subtitle}</p><div class="price-row">¥<strong>${p.price}</strong><small>补贴后</small><span class="sold">${p.sold}</span></div><div class="meta-shot"><img src="assets/list-meta-${index%2?'right':'left'}.png" alt="限时红包、小黑盒新品和购物车" /></div></div></a>`).join('')}
 render(products);
-grid.addEventListener('click',event=>{const card=event.target.closest('.product-card');if(card)openPdp(card.dataset.product)});
-grid.addEventListener('keydown',event=>{const card=event.target.closest('.product-card');if((event.key==='Enter'||event.key===' ')&&card)openPdp(card.dataset.product)});
+grid.addEventListener('click',event=>{const card=event.target.closest('.product-card');if(!card)return;event.preventDefault();openPdp(card.dataset.product)});
 document.querySelectorAll('[data-sort]').forEach(button=>button.addEventListener('click',()=>{const next=[...products],type=button.dataset.sort;if(type==='price')next.sort((a,b)=>a.price-b.price);if(type==='sales')next.sort((a,b)=>b.index-a.index);if(type==='new')next.reverse();render(next);scrollTo({top:0,behavior:'smooth'})}));
 let remaining=1351;setInterval(()=>{remaining=Math.max(0,remaining-1);document.querySelector('#countdown').textContent=`${String(Math.floor(remaining/60)).padStart(2,'0')}:${String(remaining%60).padStart(2,'0')}`},1000);
 const gate=document.querySelector('#passwordGate'),form=document.querySelector('#passwordForm'),input=document.querySelector('#passwordInput'),error=document.querySelector('#passwordError');if(sessionStorage.getItem('nike-demo-access')==='granted')gate.classList.add('hidden');async function digest(value){const data=await crypto.subtle.digest('SHA-256',new TextEncoder().encode(value));return[...new Uint8Array(data)].map(byte=>byte.toString(16).padStart(2,'0')).join('')}form.addEventListener('submit',async event=>{event.preventDefault();if(await digest(input.value)==='d521104a1c7a8a278a7212edf63856ca447bf3c2b4296c80c7c49afa13ed4cc1'){sessionStorage.setItem('nike-demo-access','granted');gate.classList.add('hidden');return}error.textContent='密码不正确，请重新输入';input.select()});if('serviceWorker'in navigator&&location.protocol.startsWith('http'))addEventListener('load',()=>navigator.serviceWorker.register('./service-worker.js'));

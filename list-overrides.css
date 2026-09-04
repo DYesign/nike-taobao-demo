@@ -7,6 +7,7 @@
 .catalog-head.compact .nav-hotspots{height:47%}
 .nav-hotspots button{border:0;background:transparent}
 .product-title{min-height:0;margin-bottom:1px;-webkit-line-clamp:1;font-size:15px;line-height:21px}
+.product-card{color:inherit;text-decoration:none;touch-action:manipulation;-webkit-tap-highlight-color:transparent;cursor:pointer}
 .photo>img{object-position:center top}
 .subline{margin:0 0 1px;line-height:18px;color:#c99b78}
 .price-row{color:#ef4b18}
