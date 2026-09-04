@@ -17,7 +17,7 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon-fire.png" />
   <link rel="stylesheet" href="styles.css?v=39" />
   <link rel="stylesheet" href="gallery-strip.css?v=39" />
-  <link rel="stylesheet" href="browser-overrides.css?v=41" />
+  <link rel="stylesheet" href="browser-overrides.css?v=42" />
   <link rel="stylesheet" href="pdp-overrides.css?v=35" />
   <link rel="stylesheet" href="install.css?v=33" />
 </head>
@@ -34,7 +34,8 @@
   </section>
   <div class="scroll-header" id="scrollHeader" aria-hidden="true">
     <div class="scroll-header-main">
-      <img src="assets/scroll-nav-top-but.png" alt="" />
+      <img class="app-only" src="assets/scroll-nav-top-but.png" alt="" />
+      <img class="browser-only" src="assets/browser-scroll-nav-top-but.png" alt="" />
       <div class="scroll-search"><img class="scroll-search-icon" src="assets/search-icon.svg" alt="" aria-hidden="true" /><span>Nike 男子公路跑步鞋</span></div>
     </div>
     <nav class="scroll-tabs" aria-label="商品页面导航">
@@ -46,7 +47,8 @@
   <main class="phone">
     <section class="hero" aria-label="商品头图轮播">
       <div class="slides" id="slides"></div>
-      <img class="nav-top-image" src="assets/nav-top-but.png" alt="" aria-hidden="true" />
+      <img class="nav-top-image app-only" src="assets/nav-top-but.png" alt="" aria-hidden="true" />
+      <img class="nav-top-image browser-only" src="assets/browser-nav-top-but.png" alt="" aria-hidden="true" />
       <button class="pdp-back-hotspot" id="pdpBack" aria-label="返回商品列表"></button>
       <div class="counter"><b id="current">1</b>/<span id="total">5</span></div>
     </section>
@@ -85,6 +87,6 @@
     <div class="toast" id="toast" role="status"></div>
   </main>
   <script src="products.js?v=39"></script>
-  <script src="script.js?v=41"></script>
+  <script src="script.js?v=42"></script>
 </body>
 </html>

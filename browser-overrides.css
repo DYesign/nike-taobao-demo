@@ -1,22 +1,25 @@
-/* Safari/WAP already provides its own status area, so remove the duplicate
-   transparent space baked into the app navigation artwork. */
+.browser-only { display: none !important; }
+
+.browser-mode .app-only { display: none !important; }
+.browser-mode .browser-only { display: block !important; }
+
 .browser-mode .scroll-header-main {
-  height: 78px;
-  aspect-ratio: auto;
+  height: auto;
+  aspect-ratio: 1500 / 296;
   overflow: hidden;
 }
 
 .browser-mode .scroll-header-main > img {
   width: 100%;
   height: auto;
-  transform: translateY(-52px);
+  transform: none;
 }
 
-.browser-mode .scroll-search {
-  top: 22px;
-  height: 32px;
-}
+.browser-mode .scroll-search { top: 26px; height: 32px; }
+.browser-mode .scroll-tabs { height: 42px; }
 
-.browser-mode .scroll-tabs {
-  height: 42px;
-}
+.browser-mode .nav-shot .app-only { display: none !important; }
+.browser-mode .catalog-head:not(.compact) .browser-only.nav-full { display: block !important; }
+.browser-mode .catalog-head:not(.compact) .browser-only.nav-compact { display: none !important; }
+.browser-mode .catalog-head.compact .browser-only.nav-full { display: none !important; }
+.browser-mode .catalog-head.compact .browser-only.nav-compact { display: block !important; }

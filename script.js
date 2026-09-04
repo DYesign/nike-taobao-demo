@@ -7,7 +7,7 @@ const passwordInput = document.querySelector('#passwordInput');
 const passwordError = document.querySelector('#passwordError');
 const scrollHeader = document.querySelector('#scrollHeader');
 const hero = document.querySelector('.hero');
-const heroNav = document.querySelector('.nav-top-image');
+const heroNavs = [...document.querySelectorAll('.nav-top-image')];
 const productDetail = document.querySelector('#productDetail');
 const detailSection = document.querySelector('.detail');
 const scrollTabs = [...document.querySelectorAll('[data-scroll-target]')];
@@ -62,7 +62,7 @@ function updateScrollHeader() {
   const revealAt = Math.max(80, hero.offsetHeight - 150);
   const shouldShow = window.scrollY > revealAt;
   scrollHeader.classList.toggle('visible', shouldShow);
-  heroNav.classList.toggle('hidden', shouldShow);
+  heroNavs.forEach((heroNav) => heroNav.classList.toggle('hidden', shouldShow));
 
   const detailStart = productDetail.offsetTop - scrollHeader.offsetHeight;
   const recommendStart = detailSection.offsetTop + detailSection.offsetHeight * 0.7;

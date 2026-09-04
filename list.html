@@ -11,6 +11,7 @@
   <link rel="apple-touch-icon" href="assets/apple-touch-icon-fire.png" />
   <link rel="stylesheet" href="list.css?v=18" />
   <link rel="stylesheet" href="list-overrides.css?v=35" />
+  <link rel="stylesheet" href="browser-overrides.css?v=42" />
   <link rel="stylesheet" href="install.css?v=33" />
 </head>
 <body>
@@ -20,12 +21,12 @@
   </section>
   <main class="catalog">
     <header class="catalog-head">
-      <div class="nav-shot"><img class="nav-full" src="assets/list-nav-full.png" alt="搜索、分类、购物车和商品排序导航" /><img class="nav-compact" src="assets/list-nav-compact.png" alt="商品排序导航" /><nav class="nav-hotspots" aria-label="商品排序"><button data-sort="default" aria-label="综合排序"></button><button data-sort="sales" aria-label="销量排序"></button><button data-sort="new" aria-label="上新排序"></button><button data-sort="price" aria-label="价格排序"></button></nav></div>
+      <div class="nav-shot"><img class="nav-full app-only" src="assets/list-nav-full.png" alt="搜索、分类、购物车和商品排序导航" /><img class="nav-compact app-only" src="assets/list-nav-compact.png" alt="商品排序导航" /><img class="nav-full browser-only" src="assets/browser-list-nav-full.png" alt="搜索、分类、购物车和商品排序导航" /><img class="nav-compact browser-only" src="assets/browser-list-nav-compact.png" alt="商品排序导航" /><nav class="nav-hotspots" aria-label="商品排序"><button data-sort="default" aria-label="综合排序"></button><button data-sort="sales" aria-label="销量排序"></button><button data-sort="new" aria-label="上新排序"></button><button data-sort="price" aria-label="价格排序"></button></nav></div>
     </header>
     <div class="deal-line"><span>限时红包</span><b id="countdown">22:31</b></div>
     <section class="product-grid" id="productGrid" aria-label="Nike 商品列表"></section>
   </main>
   <script src="products.js?v=39"></script>
-  <script src="list.js?v=39"></script>
+  <script src="list.js?v=42"></script>
 </body>
 </html>

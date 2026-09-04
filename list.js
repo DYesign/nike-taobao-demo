@@ -1,4 +1,6 @@
 const products=window.NIKE_PRODUCTS.map((product,index)=>({...product,image:product.hero[0],index}));
+const isStandaloneMode=matchMedia('(display-mode: standalone)').matches||navigator.standalone===true;
+document.documentElement.classList.toggle('browser-mode',!isStandaloneMode);
 const grid=document.querySelector('#productGrid');
 const catalogHead=document.querySelector('.catalog-head');
 let navTicking=false;
