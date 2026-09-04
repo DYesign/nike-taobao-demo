@@ -10,7 +10,3 @@
 .price small{font-size:18px}
 .trust-tags span{padding:6px 9px;font-size:12px}
 body{overflow-x:hidden}
-.phone{transition:transform .27s cubic-bezier(.22,.72,.18,1),opacity .27s ease;will-change:transform}
-.phone.page-enter-right{transform:translateX(100%);opacity:.96}
-.phone.page-leave-right{transform:translateX(100%);opacity:.96}
-@media(prefers-reduced-motion:reduce){.phone{transition:none}}

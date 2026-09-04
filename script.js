@@ -12,14 +12,12 @@ const scrollTabs = [...document.querySelectorAll('[data-scroll-target]')];
 const pdpBack = document.querySelector('#pdpBack');
 
 pdpBack.addEventListener('click', () => {
-  document.querySelector('.phone').classList.add('page-leave-right');
-  setTimeout(() => { window.location.href = 'list.html?from=pdp'; }, 270);
+  if (window.parent !== window) {
+    window.parent.postMessage({ type: 'close-nike-pdp' }, location.origin);
+    return;
+  }
+  window.location.href = 'list.html';
 });
-
-if (new URLSearchParams(location.search).get('from') === 'list') {
-  document.querySelector('.phone').classList.add('page-enter-right');
-  requestAnimationFrame(() => requestAnimationFrame(() => document.querySelector('.phone').classList.remove('page-enter-right')));
-}
 
 async function passwordDigest(value) {
   const bytes = new TextEncoder().encode(value);
