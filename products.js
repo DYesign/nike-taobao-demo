@@ -32,7 +32,7 @@ window.NIKE_PRODUCTS = [
     subtitle: 'Air Zoom 缓震 耐穿抓地',
     price: 899,
     sold: '已售 100+',
-    hero: ['assets/products/jordan-performance-ftw-v2/hero/01.jpg','assets/products/jordan-performance-ftw-v2/hero/02.jpg','assets/products/jordan-performance-ftw-v2/hero/03.jpg'],
+    hero: ['assets/products/jordan-performance-ftw-v3/hero/01.jpg','assets/products/jordan-performance-ftw-v3/hero/02.jpg','assets/products/jordan-performance-ftw-v3/hero/03.jpg','assets/products/jordan-performance-ftw-v3/hero/04.jpg','assets/products/jordan-performance-ftw-v3/hero/05.jpg'],
     detailParts: ['assets/products/details-v55/jordan-luka-77-pf/01.jpg','assets/products/details-v55/jordan-luka-77-pf/02.jpg','assets/products/details-v55/jordan-luka-77-pf/03.jpg','assets/products/details-v55/jordan-luka-77-pf/04.jpg','assets/products/details-v55/jordan-luka-77-pf/05.jpg','assets/products/details-v55/jordan-luka-77-pf/06.jpg','assets/products/details-v55/jordan-luka-77-pf/07.jpg','assets/products/details-v55/jordan-luka-77-pf/08.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Jordan Luka 77 PF 完整商品详情',
