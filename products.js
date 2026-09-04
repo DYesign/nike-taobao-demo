@@ -1,5 +1,17 @@
 window.NIKE_PRODUCTS = [
   {
+    id: 'jordan-luka-77-pf',
+    title: 'Jordan Luka 77 PF 东契奇男子篮球鞋',
+    shortTitle: 'Jordan Luka 77 PF 男子篮球鞋',
+    subtitle: 'Air Zoom 缓震 耐穿抓地',
+    price: 899,
+    sold: '已售 100+',
+    hero: ['assets/products/jordan-performance-ftw/hero-1.png','assets/products/jordan-performance-ftw/hero-2.png','assets/products/jordan-performance-ftw/hero-3.jpeg','assets/products/jordan-performance-ftw/hero-4.jpeg','assets/products/jordan-performance-ftw/hero-5.jpeg'],
+    detail: 'assets/products/jordan-performance-ftw/detail.png?v=43',
+    detailAlt: 'Jordan Luka 77 PF 完整商品详情',
+    specs: ['低帮','篮球','Jordan','男子'],
+  },
+  {
     id: 'pegasus-premium',
     title: 'Nike 男子公路跑步鞋 ZoomX 回弹缓震运动鞋',
     shortTitle: 'Nike Pegasus Premium 男子公路跑步鞋',
