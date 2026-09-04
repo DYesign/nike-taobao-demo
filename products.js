@@ -18,7 +18,7 @@ window.NIKE_PRODUCTS = [
     subtitle: '轻盈透气 干爽舒适',
     price: 599,
     sold: '已售 400+',
-    hero: ['assets/products/performance-app/hero-1.png','assets/products/performance-app/hero-2.jpeg','assets/products/performance-app/hero-3.png','assets/products/performance-app/hero-4.jpeg','assets/products/performance-app/hero-5.png','assets/products/performance-app/hero-6.png','assets/products/performance-app/hero-7.png'],
+    hero: ['assets/products/performance-app/hero-1.png','assets/products/performance-app/hero-2.jpeg','assets/products/performance-app/hero-3.png','assets/products/performance-app/hero-4.jpeg','assets/products/performance-app/hero-5.png?v=36','assets/products/performance-app/hero-6.png','assets/products/performance-app/hero-7.png'],
     detail: 'assets/products/performance-app/detail.jpeg?v=30',
     detailAlt: 'Nike AeroSwift 完整商品详情',
     specs: ['短款','跑步','Nike','女子']

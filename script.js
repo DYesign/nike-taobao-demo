@@ -15,7 +15,13 @@ const pdpBack = document.querySelector('#pdpBack');
 const params = new URLSearchParams(location.search);
 const product = window.NIKE_PRODUCTS.find((item) => item.id === params.get('product')) || window.NIKE_PRODUCTS[0];
 document.title = product.shortTitle;
-slides.innerHTML = product.hero.map((src, index) => `<figure class="slide"><img src="${src}" alt="${product.shortTitle} ${index + 1}" /></figure>`).join('');
+slides.innerHTML = product.hero.map((src, index) => `<figure class="slide"><img src="${src}" alt="${product.shortTitle} ${index + 1}" loading="${index < 2 ? 'eager' : 'lazy'}" decoding="async" ${index === 0 ? 'fetchpriority="high"' : ''} /></figure>`).join('');
+slides.querySelectorAll('img').forEach((image) => image.addEventListener('error', () => {
+  if (image.dataset.retried) return;
+  image.dataset.retried = 'true';
+  const separator = image.src.includes('?') ? '&' : '?';
+  setTimeout(() => { image.src = `${image.src}${separator}retry=${Date.now()}`; }, 500);
+}));
 document.querySelector('#productPrice').innerHTML = `<small>¥</small>${product.price}`;
 document.querySelector('#productSold').textContent = product.sold;
 document.querySelector('#productTitle').textContent = product.title;
