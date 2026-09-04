@@ -11,6 +11,7 @@ const heroNavs = [...document.querySelectorAll('.nav-top-image')];
 const productDetail = document.querySelector('#productDetail');
 const detailSection = document.querySelector('.detail');
 const sharedRecommendations = document.querySelector('#sharedRecommendations');
+const galleryVideoStrip = document.querySelector('.gallery-video-strip');
 const scrollTabs = [...document.querySelectorAll('[data-scroll-target]')];
 const pdpBack = document.querySelector('#pdpBack');
 
@@ -30,6 +31,7 @@ document.querySelector('#productTitle').textContent = product.title;
 const detailSources = product.detailParts || [product.detail];
 detailSection.innerHTML = detailSources.map((src, index) => `<img src="${src}" alt="${index === 0 ? product.detailAlt : ''}" loading="lazy" decoding="async" />`).join('');
 sharedRecommendations.hidden = !product.appendSharedRecommendations;
+galleryVideoStrip.hidden = !!product.hideGalleryStrip;
 ['#specOne','#specTwo','#specThree','#specFour'].forEach((selector, index) => { document.querySelector(selector).textContent = product.specs[index]; });
 
 pdpBack.addEventListener('click', () => {
