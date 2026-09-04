@@ -12,3 +12,5 @@
 .detail.dynamic{height:auto;aspect-ratio:auto;overflow:visible}
 .detail.dynamic img{display:block;width:100%;height:auto;transform:none}
 body{overflow-x:hidden}
+html{scrollbar-width:none}
+html::-webkit-scrollbar,body::-webkit-scrollbar{display:none;width:0;height:0}
