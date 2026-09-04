@@ -18,6 +18,11 @@
 .browser-mode .scroll-search { top: 26px; height: 32px; }
 .browser-mode .scroll-tabs { height: 42px; }
 
+/* Browser chrome already owns the bottom safe area, including its collapsed state. */
+.chrome-browser-mode .buybar.buybar-original {
+  padding-bottom: 0;
+}
+
 .browser-mode .nav-shot .app-only { display: none !important; }
 .browser-mode .catalog-head:not(.compact) .browser-only.nav-full { display: block !important; }
 .browser-mode .catalog-head:not(.compact) .browser-only.nav-compact { display: none !important; }

@@ -1,6 +1,7 @@
 const slides = document.querySelector('#slides');
 const isStandaloneMode = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
 document.documentElement.classList.toggle('browser-mode', !isStandaloneMode);
+document.documentElement.classList.toggle('chrome-browser-mode', !isStandaloneMode && /CriOS/.test(navigator.userAgent));
 const passwordGate = document.querySelector('#passwordGate');
 const passwordForm = document.querySelector('#passwordForm');
 const passwordInput = document.querySelector('#passwordInput');
