@@ -1,0 +1,11 @@
+.gallery-video-strip {
+  width: 100%;
+  overflow: hidden;
+  background: #c9c9cb;
+}
+
+.gallery-video-strip img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

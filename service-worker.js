@@ -1,4 +1,4 @@
-const CACHE_NAME = 'nike-pdp-v38';
+const CACHE_NAME = 'nike-pdp-v39';
 const APP_SHELL = [
   './',
   './index.html',
@@ -9,6 +9,7 @@ const APP_SHELL = [
   './products.js',
   './install.css',
   './styles.css',
+  './gallery-strip.css',
   './pdp-overrides.css',
   './script.js',
   './manifest.webmanifest',
@@ -25,6 +26,7 @@ const APP_SHELL = [
   './assets/scroll-nav-top-but.png',
   './assets/search-icon.svg',
   './assets/detail-intro.png',
+  './assets/gallery-video-strip.jpg',
   './assets/list-01.png',
   './assets/list-02.png',
   './assets/list-03.png',
