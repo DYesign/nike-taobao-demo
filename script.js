@@ -21,7 +21,6 @@ document.querySelector('#productSold').textContent = product.sold;
 document.querySelector('#productTitle').textContent = product.title;
 document.querySelector('#detailImage').src = product.detail;
 document.querySelector('#detailImage').alt = product.detailAlt;
-document.querySelector('#detailSection').classList.toggle('dynamic', !product.legacyDetail);
 ['#specOne','#specTwo','#specThree','#specFour'].forEach((selector, index) => { document.querySelector(selector).textContent = product.specs[index]; });
 
 pdpBack.addEventListener('click', () => {

@@ -9,8 +9,8 @@
 .price{font-size:32px;font-weight:700}
 .price small{font-size:18px}
 .trust-tags span{padding:6px 9px;font-size:12px}
-.detail.dynamic{position:relative;z-index:1;height:auto;margin-top:-16px;aspect-ratio:auto;overflow:visible}
-.detail.dynamic img{display:block;width:100%;height:auto;transform:none}
+.detail{height:auto;aspect-ratio:auto;overflow:hidden}
+.detail img{display:block;width:100%;height:auto;transform:none}
 body{overflow-x:hidden}
 html{scrollbar-width:none}
 html::-webkit-scrollbar,body::-webkit-scrollbar{display:none;width:0;height:0}

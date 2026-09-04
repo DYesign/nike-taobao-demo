@@ -7,10 +7,9 @@ window.NIKE_PRODUCTS = [
     price: 1399,
     sold: '已售 200+',
     hero: ['assets/shoe-head-1.png','assets/shoe-head-2.png','assets/shoe-head-3.jpeg','assets/shoe-head-4.jpeg','assets/shoe-head-5.jpeg'],
-    detail: 'assets/shoe-detail-long.jpeg',
+    detail: 'assets/shoe-detail-long.jpeg?v=30',
     detailAlt: 'Nike Pegasus Premium 完整商品详情',
     specs: ['低帮','公路跑','Nike','男子'],
-    legacyDetail: true
   },
   {
     id: 'aeroswift',
@@ -20,7 +19,7 @@ window.NIKE_PRODUCTS = [
     price: 599,
     sold: '已售 400+',
     hero: ['assets/products/performance-app/hero-1.png','assets/products/performance-app/hero-2.jpeg','assets/products/performance-app/hero-3.png','assets/products/performance-app/hero-4.jpeg','assets/products/performance-app/hero-5.png','assets/products/performance-app/hero-6.png','assets/products/performance-app/hero-7.png'],
-    detail: 'assets/products/performance-app/detail.jpeg?v=28',
+    detail: 'assets/products/performance-app/detail.jpeg?v=30',
     detailAlt: 'Nike AeroSwift 完整商品详情',
     specs: ['短款','跑步','Nike','女子']
   },
@@ -32,7 +31,7 @@ window.NIKE_PRODUCTS = [
     price: 719,
     sold: '已售 100+',
     hero: ['assets/products/lifestyle-ftw/hero-1.png','assets/products/lifestyle-ftw/hero-2.jpeg','assets/products/lifestyle-ftw/hero-3.png','assets/products/lifestyle-ftw/hero-4.jpeg','assets/products/lifestyle-ftw/hero-5.png'],
-    detail: 'assets/products/lifestyle-ftw/detail.jpeg?v=28',
+    detail: 'assets/products/lifestyle-ftw/detail.jpeg?v=30',
     detailAlt: 'Nike Zoom Skylon 11 完整商品详情',
     specs: ['低帮','休闲','Nike','女子']
   },
@@ -44,7 +43,7 @@ window.NIKE_PRODUCTS = [
     price: 299,
     sold: '已售 300+',
     hero: ['assets/products/lifestyle-app/hero-1.png','assets/products/lifestyle-app/hero-2.png','assets/products/lifestyle-app/hero-3.png','assets/products/lifestyle-app/hero-4.jpeg','assets/products/lifestyle-app/hero-5.png','assets/products/lifestyle-app/hero-6.png'],
-    detail: 'assets/products/lifestyle-app/detail.jpeg?v=28',
+    detail: 'assets/products/lifestyle-app/detail.jpeg?v=30',
     detailAlt: 'Nike Sportswear 男子短袖 T 恤完整商品详情',
     specs: ['短袖','休闲','Nike','男子']
   }
