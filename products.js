@@ -113,7 +113,7 @@ window.NIKE_PRODUCTS = [
     price: 299,
     sold: '已售 300+',
     hero: ['assets/products/lifestyle-app-v59/hero/01.jpg','assets/products/lifestyle-app-v59/hero/02.jpg','assets/products/lifestyle-app-v59/hero/03.jpg','assets/products/lifestyle-app-v63/hero/04.jpg','assets/products/lifestyle-app-v61/hero/05.jpg'],
-    detailParts: ['assets/products/details-v55/sportswear-tee/01.jpg','assets/products/details-v55/sportswear-tee/02.jpg','assets/products/details-v55/sportswear-tee/03.jpg','assets/products/details-v55/sportswear-tee/04.jpg','assets/products/details-v55/sportswear-tee/05.jpg','assets/products/details-v55/sportswear-tee/06.jpg','assets/products/details-v55/sportswear-tee/07.jpg','assets/products/details-v55/sportswear-tee/08.jpg','assets/products/details-v55/sportswear-tee/09.jpg'],
+    detailParts: ['assets/products/details-v71/sportswear-tee/01.jpg','assets/products/details-v71/sportswear-tee/02.jpg','assets/products/details-v71/sportswear-tee/03.jpg','assets/products/details-v71/sportswear-tee/04.jpg','assets/products/details-v71/sportswear-tee/05.jpg','assets/products/details-v71/sportswear-tee/06.jpg','assets/products/details-v71/sportswear-tee/07.jpg','assets/products/details-v71/sportswear-tee/08.jpg','assets/products/details-v71/sportswear-tee/09.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike Sportswear 男子短袖 T 恤完整商品详情',
     specs: ['短袖','休闲','Nike','男子']
@@ -126,7 +126,7 @@ window.NIKE_PRODUCTS = [
     price: 399,
     sold: '已售 100+',
     hero: ['assets/products/baby-ftw/hero/01.jpg','assets/products/baby-ftw/hero/02.jpg','assets/products/baby-ftw/hero/03.jpg','assets/products/baby-ftw/hero/04.jpg','assets/products/baby-ftw/hero/05.jpg'],
-    detailParts: ['assets/products/baby-ftw/detail/01.jpg','assets/products/baby-ftw/detail/02.jpg','assets/products/baby-ftw/detail/03.jpg','assets/products/baby-ftw/detail/04.jpg','assets/products/baby-ftw/detail/05.jpg','assets/products/baby-ftw/detail/06.jpg','assets/products/baby-ftw/detail/07.jpg','assets/products/baby-ftw/detail/08.jpg','assets/products/baby-ftw/detail/09.jpg','assets/products/baby-ftw/detail/10.jpg','assets/products/baby-ftw/detail/11.jpg'],
+    detailParts: ['assets/products/details-v71/baby-ftw/01.jpg','assets/products/details-v71/baby-ftw/02.jpg','assets/products/details-v71/baby-ftw/03.jpg','assets/products/details-v71/baby-ftw/04.jpg','assets/products/details-v71/baby-ftw/05.jpg','assets/products/details-v71/baby-ftw/06.jpg','assets/products/details-v71/baby-ftw/07.jpg','assets/products/details-v71/baby-ftw/08.jpg','assets/products/details-v71/baby-ftw/09.jpg','assets/products/details-v71/baby-ftw/10.jpg','assets/products/details-v71/baby-ftw/11.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike Swoosh 1 婴童运动鞋完整商品详情',
     specs: ['低帮','学步','Nike','婴童']
@@ -138,8 +138,8 @@ window.NIKE_PRODUCTS = [
     subtitle: '顺滑针织 刺绣标志',
     price: 399,
     sold: '已售 100+',
-    hero: ['assets/products/kids-lifestyle-app/hero/01.jpg','assets/products/kids-lifestyle-app/hero/02.jpg','assets/products/kids-lifestyle-app/hero/03.jpg','assets/products/kids-lifestyle-app/hero/04.jpg','assets/products/kids-lifestyle-app/hero/05.jpg','assets/products/kids-lifestyle-app/hero/06.jpg'],
-    detailParts: ['assets/products/kids-lifestyle-app/detail/01.jpg','assets/products/kids-lifestyle-app/detail/02.jpg','assets/products/kids-lifestyle-app/detail/03.jpg','assets/products/kids-lifestyle-app/detail/04.jpg','assets/products/kids-lifestyle-app/detail/05.jpg','assets/products/kids-lifestyle-app/detail/06.jpg','assets/products/kids-lifestyle-app/detail/07.jpg','assets/products/kids-lifestyle-app/detail/08.jpg','assets/products/kids-lifestyle-app/detail/09.jpg','assets/products/kids-lifestyle-app/detail/10.jpg','assets/products/kids-lifestyle-app/detail/11.jpg'],
+    hero: ['assets/products/kids-lifestyle-app-v71/hero/01.jpg','assets/products/kids-lifestyle-app/hero/02.jpg','assets/products/kids-lifestyle-app/hero/03.jpg','assets/products/kids-lifestyle-app/hero/04.jpg','assets/products/kids-lifestyle-app/hero/05.jpg','assets/products/kids-lifestyle-app/hero/06.jpg'],
+    detailParts: ['assets/products/details-v71/kids-lifestyle-app/01.jpg','assets/products/details-v71/kids-lifestyle-app/02.jpg','assets/products/details-v71/kids-lifestyle-app/03.jpg','assets/products/details-v71/kids-lifestyle-app/04.jpg','assets/products/details-v71/kids-lifestyle-app/05.jpg','assets/products/details-v71/kids-lifestyle-app/06.jpg','assets/products/details-v71/kids-lifestyle-app/07.jpg','assets/products/details-v71/kids-lifestyle-app/08.jpg','assets/products/details-v71/kids-lifestyle-app/09.jpg','assets/products/details-v71/kids-lifestyle-app/10.jpg','assets/products/details-v71/kids-lifestyle-app/11.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike Multisport 幼童针织夹克完整商品详情',
     specs: ['夹克','休闲','Nike','幼童']
@@ -152,7 +152,7 @@ window.NIKE_PRODUCTS = [
     price: 1099,
     sold: '已售 100+',
     hero: ['assets/products/club-therma-fit/hero/01.jpg','assets/products/club-therma-fit/hero/02.jpg','assets/products/club-therma-fit/hero/03.jpg','assets/products/club-therma-fit/hero/04.jpg','assets/products/club-therma-fit/hero/05.jpg','assets/products/club-therma-fit/hero/06.jpg'],
-    detailParts: ['assets/products/club-therma-fit/detail/01.jpg','assets/products/club-therma-fit/detail/02.jpg','assets/products/club-therma-fit/detail/03.jpg','assets/products/club-therma-fit/detail/04.jpg','assets/products/club-therma-fit/detail/05.jpg','assets/products/club-therma-fit/detail/06.jpg','assets/products/club-therma-fit/detail/07.jpg','assets/products/club-therma-fit/detail/08.jpg','assets/products/club-therma-fit/detail/09.jpg','assets/products/club-therma-fit/detail/10.jpg','assets/products/club-therma-fit/detail/11.jpg','assets/products/club-therma-fit/detail/12.jpg','assets/products/club-therma-fit/detail/13.jpg','assets/products/club-therma-fit/detail/14.jpg'],
+    detailParts: ['assets/products/details-v71/club-therma-fit/01.jpg','assets/products/details-v71/club-therma-fit/02.jpg','assets/products/details-v71/club-therma-fit/03.jpg','assets/products/details-v71/club-therma-fit/04.jpg','assets/products/details-v71/club-therma-fit/05.jpg','assets/products/details-v71/club-therma-fit/06.jpg','assets/products/details-v71/club-therma-fit/07.jpg','assets/products/details-v71/club-therma-fit/08.jpg','assets/products/details-v71/club-therma-fit/09.jpg','assets/products/details-v71/club-therma-fit/10.jpg','assets/products/details-v71/club-therma-fit/11.jpg','assets/products/details-v71/club-therma-fit/12.jpg','assets/products/details-v71/club-therma-fit/13.jpg','assets/products/details-v71/club-therma-fit/14.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike Sportswear Club Therma-FIT 男子羽绒夹克完整商品详情',
     specs: ['羽绒服','休闲','Nike','男子']
