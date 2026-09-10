@@ -128,6 +128,45 @@ window.NIKE_PRODUCTS = [
     appendSharedRecommendations: true,
     detailAlt: 'Nike Swoosh 1 婴童运动鞋完整商品详情',
     specs: ['低帮','学步','Nike','婴童']
+  },
+  {
+    id: 'kids-lifestyle-app',
+    title: 'Nike Multisport 幼童针织夹克',
+    shortTitle: 'Nike Multisport 幼童针织夹克',
+    subtitle: '顺滑针织 刺绣标志',
+    price: 399,
+    sold: '已售 100+',
+    hero: ['assets/products/kids-lifestyle-app/hero/01.jpg','assets/products/kids-lifestyle-app/hero/02.jpg','assets/products/kids-lifestyle-app/hero/03.jpg','assets/products/kids-lifestyle-app/hero/04.jpg','assets/products/kids-lifestyle-app/hero/05.jpg','assets/products/kids-lifestyle-app/hero/06.jpg'],
+    detailParts: ['assets/products/kids-lifestyle-app/detail/01.jpg','assets/products/kids-lifestyle-app/detail/02.jpg','assets/products/kids-lifestyle-app/detail/03.jpg','assets/products/kids-lifestyle-app/detail/04.jpg','assets/products/kids-lifestyle-app/detail/05.jpg','assets/products/kids-lifestyle-app/detail/06.jpg','assets/products/kids-lifestyle-app/detail/07.jpg','assets/products/kids-lifestyle-app/detail/08.jpg','assets/products/kids-lifestyle-app/detail/09.jpg','assets/products/kids-lifestyle-app/detail/10.jpg','assets/products/kids-lifestyle-app/detail/11.jpg'],
+    appendSharedRecommendations: true,
+    detailAlt: 'Nike Multisport 幼童针织夹克完整商品详情',
+    specs: ['夹克','休闲','Nike','幼童']
+  },
+  {
+    id: 'club-therma-fit',
+    title: 'Nike Sportswear Club Therma-FIT 男子拒水羽绒夹克',
+    shortTitle: 'Nike Sportswear Club Therma-FIT 男子羽绒夹克',
+    subtitle: 'Therma-FIT 保暖 拒水羽绒',
+    price: 1099,
+    sold: '已售 100+',
+    hero: ['assets/products/club-therma-fit/hero/01.jpg','assets/products/club-therma-fit/hero/02.jpg','assets/products/club-therma-fit/hero/03.jpg','assets/products/club-therma-fit/hero/04.jpg','assets/products/club-therma-fit/hero/05.jpg','assets/products/club-therma-fit/hero/06.jpg'],
+    detailParts: ['assets/products/club-therma-fit/detail/01.jpg','assets/products/club-therma-fit/detail/02.jpg','assets/products/club-therma-fit/detail/03.jpg','assets/products/club-therma-fit/detail/04.jpg','assets/products/club-therma-fit/detail/05.jpg','assets/products/club-therma-fit/detail/06.jpg','assets/products/club-therma-fit/detail/07.jpg','assets/products/club-therma-fit/detail/08.jpg','assets/products/club-therma-fit/detail/09.jpg','assets/products/club-therma-fit/detail/10.jpg','assets/products/club-therma-fit/detail/11.jpg','assets/products/club-therma-fit/detail/12.jpg','assets/products/club-therma-fit/detail/13.jpg','assets/products/club-therma-fit/detail/14.jpg'],
+    appendSharedRecommendations: true,
+    detailAlt: 'Nike Sportswear Club Therma-FIT 男子羽绒夹克完整商品详情',
+    specs: ['羽绒服','休闲','Nike','男子']
+  },
+  {
+    id: 'acg-aireez',
+    title: 'Nike ACG "Aireez" 男子轻盈透气防晒速干按扣长袖印花上衣',
+    shortTitle: 'Nike ACG "Aireez" 男子长袖上衣',
+    subtitle: '防晒速干 轻盈透气',
+    price: 899,
+    sold: '已售 100+',
+    hero: ['assets/products/acg-aireez/hero/01.jpg','assets/products/acg-aireez/hero/02.jpg','assets/products/acg-aireez/hero/03.jpg','assets/products/acg-aireez/hero/04.jpg','assets/products/acg-aireez/hero/05.jpg'],
+    detailParts: ['assets/products/acg-aireez/detail/01.jpg','assets/products/acg-aireez/detail/02.jpg','assets/products/acg-aireez/detail/03.jpg','assets/products/acg-aireez/detail/04.jpg','assets/products/acg-aireez/detail/05.jpg','assets/products/acg-aireez/detail/06.jpg','assets/products/acg-aireez/detail/07.jpg','assets/products/acg-aireez/detail/08.jpg','assets/products/acg-aireez/detail/09.jpg','assets/products/acg-aireez/detail/10.jpg','assets/products/acg-aireez/detail/11.jpg','assets/products/acg-aireez/detail/12.jpg'],
+    appendSharedRecommendations: true,
+    detailAlt: 'Nike ACG Aireez 男子长袖上衣完整商品详情',
+    specs: ['长袖','户外','ACG','男子']
   }
 ];
 
@@ -137,6 +176,9 @@ const NIKE_PRODUCT_ORDER = [
   'zoom-skylon-11',
   'sportswear-tee',
   'baby-ftw',
+  'kids-lifestyle-app',
+  'club-therma-fit',
+  'acg-aireez',
   'nike-acc-1-backpack',
   'nike-acc-2-backpack',
   'aeroswift',
