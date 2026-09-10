@@ -115,6 +115,19 @@ window.NIKE_PRODUCTS = [
     appendSharedRecommendations: true,
     detailAlt: 'Nike Sportswear 男子短袖 T 恤完整商品详情',
     specs: ['短袖','休闲','Nike','男子']
+  },
+  {
+    id: 'baby-ftw',
+    title: 'Nike Swoosh 1 耐克宝宝勾婴童易穿脱运动鞋',
+    shortTitle: 'Nike Swoosh 1 婴童易穿脱运动鞋',
+    subtitle: 'Flyknit 飞织 无需系带易穿脱',
+    price: 399,
+    sold: '已售 100+',
+    hero: ['assets/products/baby-ftw/hero/01.jpg','assets/products/baby-ftw/hero/02.jpg','assets/products/baby-ftw/hero/03.jpg','assets/products/baby-ftw/hero/04.jpg','assets/products/baby-ftw/hero/05.jpg'],
+    detailParts: ['assets/products/baby-ftw/detail/01.jpg','assets/products/baby-ftw/detail/02.jpg','assets/products/baby-ftw/detail/03.jpg','assets/products/baby-ftw/detail/04.jpg','assets/products/baby-ftw/detail/05.jpg','assets/products/baby-ftw/detail/06.jpg','assets/products/baby-ftw/detail/07.jpg','assets/products/baby-ftw/detail/08.jpg','assets/products/baby-ftw/detail/09.jpg','assets/products/baby-ftw/detail/10.jpg','assets/products/baby-ftw/detail/11.jpg'],
+    appendSharedRecommendations: true,
+    detailAlt: 'Nike Swoosh 1 婴童运动鞋完整商品详情',
+    specs: ['低帮','学步','Nike','婴童']
   }
 ];
 
@@ -123,6 +136,7 @@ const NIKE_PRODUCT_ORDER = [
   'aeroswift-t4',
   'zoom-skylon-11',
   'sportswear-tee',
+  'baby-ftw',
   'nike-acc-1-backpack',
   'nike-acc-2-backpack',
   'aeroswift',
