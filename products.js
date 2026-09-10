@@ -175,14 +175,14 @@ const NIKE_PRODUCT_ORDER = [
   'aeroswift-t4',
   'zoom-skylon-11',
   'sportswear-tee',
-  'baby-ftw',
-  'kids-lifestyle-app',
   'club-therma-fit',
-  'acg-aireez',
   'nike-acc-1-backpack',
   'nike-acc-2-backpack',
   'aeroswift',
   'nike-air-force-1-07-polka-dot',
+  'baby-ftw',
+  'kids-lifestyle-app',
+  'acg-aireez',
   'jordan-luka-77-pf',
 ];
 window.NIKE_PRODUCTS.sort((a, b) => NIKE_PRODUCT_ORDER.indexOf(a.id) - NIKE_PRODUCT_ORDER.indexOf(b.id));
