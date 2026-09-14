@@ -1,19 +1,5 @@
 window.NIKE_PRODUCTS = [
   {
-    id: 'nike-acc-1-backpack',
-    title: 'Nike 21L 运动双肩包 ACC 1',
-    shortTitle: 'Nike 21L 运动双肩包 ACC 1',
-    subtitle: '多隔层收纳 舒适背负',
-    price: 499,
-    sold: '已售 100+',
-    hero: ['assets/products/nike-acc-1/hero-1.png','assets/products/nike-acc-1/hero-2.jpeg','assets/products/nike-acc-1/hero-3.jpeg','assets/products/nike-acc-1/hero-4.jpeg','assets/products/nike-acc-1/hero-5.png'],
-    detailParts: ['assets/products/acc-eg-v66/eg1-detail/01.jpg','assets/products/acc-eg-v66/eg1-detail/02.jpg','assets/products/acc-eg-v66/eg1-detail/03.jpg','assets/products/acc-eg-v66/eg1-detail/04.jpg','assets/products/acc-eg-v66/eg1-detail/05.jpg','assets/products/acc-eg-v66/eg1-detail/06.jpg','assets/products/acc-eg-v66/eg1-detail/07.jpg'],
-    hideGalleryStrip: true,
-    appendSharedRecommendations: true,
-    detailAlt: 'Nike 21L 运动双肩包 ACC 1 完整商品详情',
-    specs: ['双肩包','运动','Nike','通用'],
-  },
-  {
     id: 'nike-acc-2-backpack',
     title: 'Nike 21L 运动双肩包 ACC 2',
     shortTitle: 'Nike 21L 运动双肩包 ACC 2',
@@ -178,7 +164,6 @@ const NIKE_PRODUCT_ORDER = [
   'zoom-skylon-11',
   'sportswear-tee',
   'club-therma-fit',
-  'nike-acc-1-backpack',
   'nike-acc-2-backpack',
   'aeroswift',
   'nike-air-force-1-07-polka-dot',
