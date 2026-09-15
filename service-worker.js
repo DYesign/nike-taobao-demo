@@ -1,4 +1,4 @@
-const CACHE_NAME = 'nike-pdp-v80';
+const CACHE_NAME = 'nike-pdp-v81';
 const APP_SHELL = [
   './',
   './index.html',
