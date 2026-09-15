@@ -150,7 +150,7 @@ window.NIKE_PRODUCTS = [
     subtitle: '防晒速干 轻盈透气',
     price: 899,
     sold: '已售 100+',
-    hero: ['assets/products/acg-aireez-v75/hero/01.webp','assets/products/acg-aireez-v75/hero/02.webp','assets/products/acg-aireez-v75/hero/03.webp','assets/products/acg-aireez-v75/hero/04.webp','assets/products/acg-aireez-v75/hero/05.webp'],
+    hero: ['assets/products/acg-aireez-v77/hero/01.webp','assets/products/acg-aireez-v75/hero/02.webp','assets/products/acg-aireez-v75/hero/03.webp','assets/products/acg-aireez-v75/hero/04.webp','assets/products/acg-aireez-v75/hero/05.webp'],
     detailParts: ['assets/products/details-v75/acg-aireez/01.webp','assets/products/details-v75/acg-aireez/02.webp','assets/products/details-v75/acg-aireez/03.webp','assets/products/details-v75/acg-aireez/04.webp','assets/products/details-v75/acg-aireez/05.webp','assets/products/details-v75/acg-aireez/06.webp','assets/products/details-v75/acg-aireez/07.webp','assets/products/details-v75/acg-aireez/08.webp','assets/products/details-v75/acg-aireez/09.webp','assets/products/details-v75/acg-aireez/10.webp','assets/products/details-v75/acg-aireez/11.webp','assets/products/details-v75/acg-aireez/12.webp'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike ACG Aireez 男子长袖上衣完整商品详情',
