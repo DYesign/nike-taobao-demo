@@ -34,7 +34,7 @@ window.NIKE_PRODUCTS = [
     price: 899,
     sold: '已售 100+',
     hero: ['assets/products/t1-3-nike/hero/01.jpg','assets/products/t1-3-nike/hero/02.jpg','assets/products/t1-3-nike/hero/03.jpg','assets/products/t1-3-nike/hero/04.jpg','assets/products/t1-3-nike/hero/05.jpg'],
-    detailParts: ['assets/products/details-v55/nike-air-force-1-07-polka-dot/01.jpg','assets/products/details-v55/nike-air-force-1-07-polka-dot/02.jpg','assets/products/details-v55/nike-air-force-1-07-polka-dot/03.jpg','assets/products/details-v55/nike-air-force-1-07-polka-dot/04.jpg','assets/products/details-v55/nike-air-force-1-07-polka-dot/05.jpg','assets/products/details-v55/nike-air-force-1-07-polka-dot/06.jpg','assets/products/details-v55/nike-air-force-1-07-polka-dot/07.jpg','assets/products/details-v55/nike-air-force-1-07-polka-dot/08.jpg','assets/products/details-v55/nike-air-force-1-07-polka-dot/09.jpg'],
+    detailParts: ['assets/products/details-v73/nike-air-force-1-07-polka-dot/01.jpg','assets/products/details-v73/nike-air-force-1-07-polka-dot/02.jpg','assets/products/details-v73/nike-air-force-1-07-polka-dot/03.jpg','assets/products/details-v73/nike-air-force-1-07-polka-dot/04.jpg','assets/products/details-v73/nike-air-force-1-07-polka-dot/05.jpg','assets/products/details-v73/nike-air-force-1-07-polka-dot/06.jpg','assets/products/details-v73/nike-air-force-1-07-polka-dot/07.jpg','assets/products/details-v73/nike-air-force-1-07-polka-dot/08.jpg'],
     appendSharedRecommendations: true,
     detailAlt: "Nike Air Force 1 '07 女子运动鞋完整商品详情",
     specs: ['低帮','休闲','Nike','女子'],
@@ -47,7 +47,7 @@ window.NIKE_PRODUCTS = [
     price: 1399,
     sold: '已售 200+',
     hero: ['assets/products/t4-performance-ftw/hero/01.jpg','assets/products/t4-performance-ftw/hero/02.jpg','assets/products/t4-performance-ftw/hero/03.jpg','assets/products/t4-performance-ftw/hero/04.jpg','assets/products/t4-performance-ftw/hero/05.jpg'],
-    detailParts: ['assets/products/pegasus-premium-v60/detail/01.jpg','assets/products/pegasus-premium-v60/detail/02.jpg','assets/products/pegasus-premium-v60/detail/03.jpg','assets/products/pegasus-premium-v60/detail/04.jpg','assets/products/pegasus-premium-v60/detail/05.jpg','assets/products/pegasus-premium-v60/detail/06.jpg','assets/products/pegasus-premium-v60/detail/07.jpg','assets/products/pegasus-premium-v60/detail/08.jpg'],
+    detailParts: ['assets/products/details-v73/pegasus-premium/01.jpg','assets/products/details-v73/pegasus-premium/02.jpg','assets/products/details-v73/pegasus-premium/03.jpg','assets/products/details-v73/pegasus-premium/04.jpg','assets/products/details-v73/pegasus-premium/05.jpg','assets/products/details-v73/pegasus-premium/06.jpg','assets/products/details-v73/pegasus-premium/07.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike Pegasus Premium 完整商品详情',
     specs: ['低帮','公路跑','Nike','男子'],
@@ -60,7 +60,7 @@ window.NIKE_PRODUCTS = [
     price: 599,
     sold: '已售 400+',
     hero: ['assets/products/t1-3-performance-app-v57/hero/01.jpg','assets/products/t1-3-performance-app-v57/hero/02.jpg','assets/products/t1-3-performance-app-v57/hero/03.jpg','assets/products/t1-3-performance-app-v57/hero/04.jpg','assets/products/t1-3-performance-app-v57/hero/05.jpg','assets/products/t1-3-performance-app-v57/hero/06.jpg','assets/products/t1-3-performance-app-v57/hero/07.jpg'],
-    detailParts: ['assets/products/details-v55/aeroswift/01.jpg','assets/products/details-v55/aeroswift/02.jpg','assets/products/details-v55/aeroswift/03.jpg','assets/products/details-v55/aeroswift/04.jpg','assets/products/details-v55/aeroswift/05.jpg','assets/products/details-v55/aeroswift/06.jpg','assets/products/details-v55/aeroswift/07.jpg','assets/products/details-v55/aeroswift/08.jpg','assets/products/details-v55/aeroswift/09.jpg','assets/products/details-v55/aeroswift/10.jpg','assets/products/details-v55/aeroswift/11.jpg','assets/products/details-v55/aeroswift/12.jpg','assets/products/details-v55/aeroswift/13.jpg','assets/products/details-v55/aeroswift/14.jpg'],
+    detailParts: ['assets/products/details-v73/aeroswift/01.jpg','assets/products/details-v73/aeroswift/02.jpg','assets/products/details-v73/aeroswift/03.jpg','assets/products/details-v73/aeroswift/04.jpg','assets/products/details-v73/aeroswift/05.jpg','assets/products/details-v73/aeroswift/06.jpg','assets/products/details-v73/aeroswift/07.jpg','assets/products/details-v73/aeroswift/08.jpg','assets/products/details-v73/aeroswift/09.jpg','assets/products/details-v73/aeroswift/10.jpg','assets/products/details-v73/aeroswift/11.jpg','assets/products/details-v73/aeroswift/12.jpg','assets/products/details-v73/aeroswift/13.jpg','assets/products/details-v73/aeroswift/14.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike AeroSwift 完整商品详情',
     specs: ['短款','跑步','Nike','女子']
@@ -98,7 +98,7 @@ window.NIKE_PRODUCTS = [
     subtitle: '顺滑舒适 宽松版型',
     price: 299,
     sold: '已售 300+',
-    hero: ['assets/products/lifestyle-app-v59/hero/01.jpg','assets/products/lifestyle-app-v59/hero/02.jpg','assets/products/lifestyle-app-v59/hero/03.jpg','assets/products/lifestyle-app-v63/hero/04.jpg','assets/products/lifestyle-app-v61/hero/05.jpg'],
+    hero: ['assets/products/lifestyle-app-v73/hero/01.jpg','assets/products/lifestyle-app-v73/hero/02.jpg','assets/products/lifestyle-app-v73/hero/03.jpg','assets/products/lifestyle-app-v73/hero/04.jpg','assets/products/lifestyle-app-v73/hero/05.jpg'],
     detailParts: ['assets/products/details-v71/sportswear-tee/01.jpg','assets/products/details-v71/sportswear-tee/02.jpg','assets/products/details-v71/sportswear-tee/03.jpg','assets/products/details-v71/sportswear-tee/04.jpg','assets/products/details-v71/sportswear-tee/05.jpg','assets/products/details-v71/sportswear-tee/06.jpg','assets/products/details-v71/sportswear-tee/07.jpg','assets/products/details-v71/sportswear-tee/08.jpg','assets/products/details-v71/sportswear-tee/09.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike Sportswear 男子短袖 T 恤完整商品详情',
@@ -165,13 +165,14 @@ const NIKE_PRODUCT_ORDER = [
   'sportswear-tee',
   'club-therma-fit',
   'nike-acc-2-backpack',
-  'aeroswift',
-  'nike-air-force-1-07-polka-dot',
   'baby-ftw',
   'kids-lifestyle-app',
   'acg-aireez',
   'jordan-luka-77-pf',
+  'aeroswift',
+  'nike-air-force-1-07-polka-dot',
 ];
+window.NIKE_ENRICHED = ['aeroswift', 'nike-air-force-1-07-polka-dot'];
 window.NIKE_PRODUCTS.sort((a, b) => NIKE_PRODUCT_ORDER.indexOf(a.id) - NIKE_PRODUCT_ORDER.indexOf(b.id));
 
 window.setupNikeInstallGate = function () {
