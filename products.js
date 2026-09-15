@@ -124,7 +124,7 @@ window.NIKE_PRODUCTS = [
     subtitle: 'Therma-FIT 保暖 拒水羽绒',
     price: 1099,
     sold: '已售 100+',
-    hero: ['assets/products/club-therma-fit-v79/hero/01.jpg','assets/products/club-therma-fit-v79/hero/02.jpg','assets/products/club-therma-fit-v79/hero/03.jpg','assets/products/club-therma-fit-v79/hero/04.jpg','assets/products/club-therma-fit-v79/hero/05.jpg','assets/products/club-therma-fit-v79/hero/06.jpg'],
+    hero: ['assets/products/club-therma-fit-v79/hero/01.jpg','assets/products/club-therma-fit-v79/hero/02.jpg','assets/products/club-therma-fit-v79/hero/03.jpg','assets/products/club-therma-fit-v79/hero/04.jpg','assets/products/club-therma-fit-v79/hero/05.jpg'],
     detailParts: ['assets/products/details-v79/club-therma-fit/01.jpg','assets/products/details-v79/club-therma-fit/02.jpg','assets/products/details-v79/club-therma-fit/03.jpg','assets/products/details-v79/club-therma-fit/04.jpg','assets/products/details-v79/club-therma-fit/05.jpg','assets/products/details-v79/club-therma-fit/06.jpg','assets/products/details-v79/club-therma-fit/07.jpg','assets/products/details-v79/club-therma-fit/08.jpg','assets/products/details-v79/club-therma-fit/09.jpg','assets/products/details-v79/club-therma-fit/10.jpg','assets/products/details-v79/club-therma-fit/11.jpg','assets/products/details-v79/club-therma-fit/12.jpg','assets/products/details-v79/club-therma-fit/13.jpg','assets/products/details-v79/club-therma-fit/14.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike Sportswear Club Therma-FIT 男子羽绒夹克完整商品详情',
