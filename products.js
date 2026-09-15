@@ -66,19 +66,6 @@ window.NIKE_PRODUCTS = [
     specs: ['短款','跑步','Nike','女子']
   },
   {
-    id: 'aeroswift-t4',
-    title: 'Nike AeroSwift Dri-FIT ADV 女子速干短款跑步背心 T4',
-    shortTitle: 'Nike AeroSwift 女子速干跑步背心 T4',
-    subtitle: 'Dri-FIT ADV 轻盈透气',
-    price: 599,
-    sold: '已售 400+',
-    hero: ['assets/products/t4-performance-app/hero/01.jpg','assets/products/t4-performance-app/hero/02.jpg','assets/products/t4-performance-app/hero/03.jpg','assets/products/t4-performance-app/hero/04.jpg','assets/products/t4-performance-app-v62/hero/05.jpg','assets/products/t4-performance-app-v62/hero/06.jpg','assets/products/t4-performance-app-v62/hero/07.jpg'],
-    detailParts: ['assets/products/details-v55/aeroswift-t4/01.jpg','assets/products/details-v55/aeroswift-t4/02.jpg','assets/products/details-v55/aeroswift-t4/03.jpg','assets/products/details-v55/aeroswift-t4/04.jpg','assets/products/details-v55/aeroswift-t4/05.jpg','assets/products/details-v55/aeroswift-t4/06.jpg','assets/products/details-v55/aeroswift-t4/07.jpg','assets/products/details-v55/aeroswift-t4/08.jpg','assets/products/details-v55/aeroswift-t4/09.jpg','assets/products/details-v55/aeroswift-t4/10.jpg'],
-    appendSharedRecommendations: true,
-    detailAlt: 'Nike AeroSwift T4 完整商品详情',
-    specs: ['短款','跑步','Nike','女子']
-  },
-  {
     id: 'zoom-skylon-11',
     title: 'Nike Zoom Skylon 11 耐克大白牙女子运动鞋',
     shortTitle: 'Nike Zoom Skylon 11 女子运动鞋',
@@ -160,15 +147,14 @@ window.NIKE_PRODUCTS = [
 
 const NIKE_PRODUCT_ORDER = [
   'pegasus-premium',
-  'aeroswift-t4',
+  'acg-aireez',
   'zoom-skylon-11',
   'sportswear-tee',
   'club-therma-fit',
   'nike-acc-2-backpack',
-  'baby-ftw',
   'kids-lifestyle-app',
-  'acg-aireez',
   'jordan-luka-77-pf',
+  'baby-ftw',
   'aeroswift',
   'nike-air-force-1-07-polka-dot',
 ];
