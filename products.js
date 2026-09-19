@@ -46,7 +46,7 @@ window.NIKE_PRODUCTS = [
     subtitle: 'ZoomX 泡棉 回弹缓震',
     price: 1399,
     sold: '已售 200+',
-    hero: ['assets/products/pegasus-premium-v79/hero/01.jpg','assets/products/pegasus-premium-v79/hero/02.jpg','assets/products/pegasus-premium-v79/hero/03.jpg','assets/products/pegasus-premium-v79/hero/04.jpg','assets/products/pegasus-premium-v79/hero/05.jpg'],
+    hero: ['assets/products/pegasus-premium-v79/hero/01.jpg','assets/products/pegasus-premium-v79/hero/02.jpg','assets/products/pegasus-premium-v79/hero/03.jpg','assets/products/pegasus-premium-v79/hero/04.jpg','assets/products/pegasus-premium-v83/hero/05.jpg'],
     detailParts: ['assets/products/details-v79/pegasus-premium/01.jpg','assets/products/details-v79/pegasus-premium/02.jpg','assets/products/details-v79/pegasus-premium/03.jpg','assets/products/details-v79/pegasus-premium/04.jpg','assets/products/details-v79/pegasus-premium/05.jpg','assets/products/details-v79/pegasus-premium/06.jpg','assets/products/details-v79/pegasus-premium/07.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike Pegasus Premium 完整商品详情',
