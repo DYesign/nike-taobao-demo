@@ -7,56 +7,50 @@
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <title>Nike 商品</title>
+  <link rel="stylesheet" href="styles.css?v=39" />
+  <link rel="stylesheet" href="gallery-strip.css?v=39" />
+  <link rel="stylesheet" href="browser-overrides.css?v=64" />
+  <link rel="stylesheet" href="pdp-overrides.css?v=36" />
   <style>
-    :root{--orange:#ff5000;--red:#ff2d4d}
-    *{box-sizing:border-box}
-    html,body{height:100%;margin:0;overflow:hidden;background:#fff;font-family:"PingFang SC","Helvetica Neue",sans-serif;color:#171717}
-    .phone{height:100%;max-width:430px;margin:0 auto;display:grid;grid-template-rows:auto minmax(0,1fr) auto auto auto auto;background:#fff}
-    .nav-shot{display:block;width:100%;height:auto}
-    .hero{position:relative;width:100%;min-height:0;align-self:center;background:#f1f1f1;overflow:hidden;aspect-ratio:1179/1474;max-height:100%}
-    .slides{display:flex;width:100%;height:100%;overflow-x:auto;scroll-snap-type:x mandatory;overscroll-behavior-x:contain;scrollbar-width:none}
-    .slides::-webkit-scrollbar{display:none}
-    .slide{flex:0 0 100%;width:100%;height:100%;margin:0;scroll-snap-align:start;scroll-snap-stop:always}
-    .slide img,.slide video{display:block;width:100%;height:100%;object-fit:cover;background:#000}
-    .slide img{background:#f1f1f1}
-    .slide video{object-fit:contain}
-    .counter{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);height:20px;min-width:36px;padding:0 7px;border-radius:5px;background:rgba(0,0,0,.46);color:#fff;font-size:12px;line-height:20px;text-align:center;z-index:2}
-    .promo{display:grid;grid-template-columns:1fr auto;align-items:center;gap:8px;padding:8px 12px;background:linear-gradient(90deg,#ff2d4d,#ff6a3d);color:#fff}
-    .promo .badge{font-size:11px;font-weight:600;opacity:.95}
-    .promo .price-line{display:flex;align-items:baseline;gap:6px;margin-top:2px}
-    .promo .price{font-size:24px;font-weight:800;line-height:1}
-    .promo .price small{font-size:13px;font-weight:600}
-    .promo .orig{font-size:12px;opacity:.85;text-decoration:line-through}
-    .promo .coupon{font-size:11px;opacity:.95;margin-top:2px}
-    .promo .right{text-align:right;font-size:11px;opacity:.95;line-height:1.5}
-    .title-row{display:flex;gap:6px;padding:10px 12px 6px;font-size:16px;font-weight:600;line-height:1.4}
-    .title-row mark{flex:none;align-self:flex-start;margin-top:2px;padding:1px 4px;border-radius:3px;background:#ef1747;color:#fff;font-size:11px}
-    .chips{display:flex;gap:6px;padding:0 12px 8px;overflow:hidden}
-    .chips span{white-space:nowrap;padding:4px 8px;border:1px solid #e8ddcf;border-radius:4px;color:#8c6339;font-size:11px}
-    .buybar{display:block;width:100%;height:auto}
+    .hero{aspect-ratio:1179/1474}
+    .slide video{display:block;width:100%;height:100%;object-fit:contain;background:#000}
   </style>
 </head>
 <body>
   <main class="phone">
-    <img class="nav-shot" src="assets/nav-top-but.png" alt="" aria-hidden="true" />
-    <section class="hero" aria-label="商品图片和视频">
+    <section class="hero" aria-label="商品头图轮播">
       <div class="slides" id="slides"></div>
-      <div class="counter"><b id="current">1</b>/<span id="total"></span></div>
+      <img class="nav-top-image app-only" src="assets/nav-top-but.png" alt="" aria-hidden="true" />
+      <img class="nav-top-image browser-only" src="assets/browser-nav-top-but.png" alt="" aria-hidden="true" />
+      <button class="pdp-back-hotspot" id="pdpBack" aria-label="返回"></button>
+      <div class="counter"><b id="current">1</b>/<span id="total">1</span></div>
     </section>
-    <section class="promo">
-      <div>
-        <div class="badge" id="badge"></div>
-        <div class="price-line">
-          <div class="price"><small>¥</small><span id="price"></span></div>
-          <span class="orig" id="origPrice"></span>
-        </div>
-        <div class="coupon" id="coupon"></div>
-      </div>
-      <div class="right"><div id="deadline"></div><div id="sold"></div></div>
+
+    <section class="gallery-video-strip" aria-label="图集、视频和商品款式">
+      <img src="assets/gallery-video-strip.jpg" alt="图集、视频、黑色款、白色款和全部款式" />
     </section>
-    <h1 class="title-row"><mark>天猫</mark><span id="title"></span></h1>
-    <div class="chips" id="chips"></div>
-    <img class="buybar" src="assets/buybar-original.png" alt="店铺、客服、收藏、加入购物车、领券购买" />
+
+    <section class="commerce-info" id="productInfo">
+      <div class="price-row"><div class="price" id="productPrice"><small>¥</small>0</div><span id="productSold"></span></div>
+      <h1><mark>天猫</mark><span id="productTitle"></span></h1>
+      <div class="trust-tags"><span>店铺一年回头客 200万+</span><span>官方正品保障</span></div>
+    </section>
+
+    <div class="section-gap" aria-hidden="true"></div>
+    <button class="vip-row"><span><b>88VIP</b> 百万大额商品 95 折，开 88VIP 一单回本</span><strong>去开通 ›</strong></button>
+
+    <section class="fulfillment">
+      <button><img class="info-icon" src="assets/icons/delivery.png" alt="" /><span><strong class="green">最快后日达</strong><small>预计今天发货，后天送达<br />送货上门｜多仓发货｜快递免运费</small></span><i>›</i></button>
+      <button><img class="info-icon" src="assets/icons/shield.png" alt="" /><span><strong class="brown">正品保障 · 假一赔四</strong><small>极速退款｜7天无理由退换｜上门取退</small></span><i>›</i></button>
+      <button><img class="info-icon" src="assets/icons/spec.png" alt="" /><span class="specs"><em><strong id="specOne">低帮</strong><small>商品类型</small></em><em><strong id="specTwo">运动</strong><small>风格</small></em><em><strong id="specThree">Nike</strong><small>品牌</small></em><em><strong id="specFour">男子</strong><small>适用性别</small></em></span><i>›</i></button>
+    </section>
+
+    <footer class="buybar buybar-original">
+      <img src="assets/buybar-original.png" alt="店铺、客服、收藏、加入购物车、领券购买" />
+      <button class="buybar-hotspot cart" aria-label="加入购物车"></button>
+      <button class="buybar-hotspot buy" id="buyNow" aria-label="领券购买"></button>
+    </footer>
+    <div class="toast" id="toast" role="status"></div>
   </main>
   <script src="spotlight.js?v=85"></script>
 </body>
