@@ -1,3 +1,7 @@
+const isStandaloneMode = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
+document.documentElement.classList.toggle('browser-mode', !isStandaloneMode);
+document.documentElement.classList.toggle('chrome-browser-mode', !isStandaloneMode && /CriOS/.test(navigator.userAgent));
+
 const SPOTLIGHT_PRODUCTS = {
   'hq2592': {
     name: 'Nike Pegasus Premium HQ2592',
@@ -22,15 +26,7 @@ const SPOTLIGHT_PRODUCTS = {
     sold: '已售 100+',
     title: '耐克男子休闲针织卫衣秋冬叠搭舒适拉链口袋连帽衫 NIKE HV0950',
     images: ['assets/products/hv0950/hero/01.jpg','assets/products/hv0950/hero/02.jpg','assets/products/hv0950/hero/03.avif','assets/products/hv0950/hero/04.avif','assets/products/hv0950/hero/05.avif','assets/products/hv0950/hero/06.avif','assets/products/hv0950/hero/07.avif','assets/products/hv0950/hero/08.avif','assets/products/hv0950/hero/09.avif','assets/products/hv0950/hero/10.avif','assets/products/hv0950/hero/11.avif','assets/products/hv0950/hero/12.avif'],
-    videos: ['assets/products/hv0950/video/1.mp4','assets/products/hv0950/video/2.mp4'],
-    strip: {
-      gallery: 'assets/products/hv0950/hero/01.jpg',
-      videoThumb: 'assets/products/hv0950/video-thumb.jpg',
-      styles: [
-        { img: 'assets/products/hv0950/hero/03.avif' },
-        { img: 'assets/products/hv0950/hero/04.avif' }
-      ]
-    }
+    videos: ['assets/products/hv0950/video/1.mp4','assets/products/hv0950/video/2.mp4']
   }
 };
 
@@ -55,13 +51,15 @@ const strip = document.querySelector('#galleryStrip');
 if (product.stripImage) {
   strip.classList.add('static');
   strip.innerHTML = `<img src="${product.stripImage}" alt="图集、视频、搭配和全部款式" />`;
-} else {
+} else if (product.strip) {
   strip.innerHTML = [
     `<div class="gvs-cell"><img src="${product.strip.gallery}" alt="图集" /><span class="gvs-label">图集</span></div>`,
     `<div class="gvs-cell"><img src="${product.strip.videoThumb}" alt="视频" /><span class="gvs-label">视频</span></div>`,
     ...product.strip.styles.map((s) => `<div class="gvs-style"><img src="${s.img}" alt="${s.code || product.name}" />${s.code ? `<span>${s.code}</span>` : ''}</div>`),
     '<span class="gvs-all">全部 ›</span>'
   ].join('');
+} else {
+  strip.remove();
 }
 
 const current = document.querySelector('#current');
