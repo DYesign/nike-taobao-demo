@@ -53,6 +53,7 @@ document.querySelector('#productTitle').textContent = product.title;
 
 const strip = document.querySelector('#galleryStrip');
 if (product.stripImage) {
+  strip.classList.add('static');
   strip.innerHTML = `<img src="${product.stripImage}" alt="图集、视频、搭配和全部款式" />`;
 } else {
   strip.innerHTML = [
