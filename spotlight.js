@@ -4,8 +4,9 @@ const SPOTLIGHT_PRODUCTS = {
     price: '1167',
     sold: '已售 700+',
     title: '耐克顶级飞马男子缓震专业跑步鞋 NIKE PEGASUS PREMIUM HQ2592',
-    images: ['assets/products/hq2592/hero/01.jpg','assets/products/hq2592/hero/02.jpg','assets/products/hq2592/hero/03.avif','assets/products/hq2592/hero/04.avif','assets/products/hq2592/hero/05.avif','assets/products/hq2592/hero/06.avif','assets/products/hq2592/hero/07.avif','assets/products/hq2592/hero/08.avif','assets/products/hq2592/hero/09.avif','assets/products/hq2592/hero/10.avif','assets/products/hq2592/hero/11.avif'],
+    images: ['assets/products/hq2592/hero/01.jpg','assets/products/hq2592/hero/02.jpg','assets/products/hq2592/hero/11.avif','assets/products/hq2592/hero/03.avif','assets/products/hq2592/hero/04.avif','assets/products/hq2592/hero/05.avif','assets/products/hq2592/hero/06.avif','assets/products/hq2592/hero/07.avif','assets/products/hq2592/hero/08.avif','assets/products/hq2592/hero/09.avif','assets/products/hq2592/hero/10.avif'],
     videos: ['assets/products/hq2592/video/1.mp4','assets/products/hq2592/video/3.mp4','assets/products/hq2592/video/2.mp4'],
+    stripImage: 'assets/products/hq2592/strip.jpg',
     strip: {
       gallery: 'assets/products/hq2592/hero/01.jpg',
       videoThumb: 'assets/products/hq2592/video-thumb.jpg',
@@ -51,12 +52,16 @@ document.querySelector('#productSold').textContent = product.sold;
 document.querySelector('#productTitle').textContent = product.title;
 
 const strip = document.querySelector('#galleryStrip');
-strip.innerHTML = [
-  `<div class="gvs-cell"><img src="${product.strip.gallery}" alt="图集" /><span class="gvs-label">图集</span></div>`,
-  `<div class="gvs-cell"><img src="${product.strip.videoThumb}" alt="视频" /><span class="gvs-label">视频</span></div>`,
-  ...product.strip.styles.map((s) => `<div class="gvs-style"><img src="${s.img}" alt="${s.code || product.name}" />${s.code ? `<span>${s.code}</span>` : ''}</div>`),
-  '<span class="gvs-all">全部 ›</span>'
-].join('');
+if (product.stripImage) {
+  strip.innerHTML = `<img src="${product.stripImage}" alt="图集、视频、搭配和全部款式" />`;
+} else {
+  strip.innerHTML = [
+    `<div class="gvs-cell"><img src="${product.strip.gallery}" alt="图集" /><span class="gvs-label">图集</span></div>`,
+    `<div class="gvs-cell"><img src="${product.strip.videoThumb}" alt="视频" /><span class="gvs-label">视频</span></div>`,
+    ...product.strip.styles.map((s) => `<div class="gvs-style"><img src="${s.img}" alt="${s.code || product.name}" />${s.code ? `<span>${s.code}</span>` : ''}</div>`),
+    '<span class="gvs-all">全部 ›</span>'
+  ].join('');
+}
 
 const current = document.querySelector('#current');
 document.querySelector('#total').textContent = media.length;
