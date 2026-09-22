@@ -25,10 +25,10 @@ const SPOTLIGHT_PRODUCTS = {
     price: '827',
     sold: '已售 100+',
     title: '耐克男子休闲针织卫衣秋冬叠搭舒适拉链口袋连帽衫 NIKE HV0950',
-    images: ['assets/products/hv0950/hero/03.avif','assets/products/hv0950/hero/04.avif','assets/products/hv0950/hero/05.avif','assets/products/hv0950/hero/06.avif','assets/products/hv0950/hero/07.avif'],
+    images: ['assets/products/hv0950/hero/01.jpg','assets/products/hv0950/hero/02.jpg','assets/products/hv0950/hero/03.avif','assets/products/hv0950/hero/04.avif','assets/products/hv0950/hero/05.avif'],
     videos: ['assets/products/hv0950/video/1.mp4','assets/products/hv0950/video/2.mp4'],
     strip: {
-      gallery: 'assets/products/hv0950/hero/03.avif',
+      gallery: 'assets/products/hv0950/hero/01.jpg',
       videoThumb: 'assets/products/hv0950/video-thumb.jpg',
       extraCells: [],
       styles: [
