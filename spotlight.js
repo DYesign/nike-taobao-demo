@@ -10,13 +10,13 @@ const SPOTLIGHT_PRODUCTS = {
     title: '耐克顶级飞马男子缓震专业跑步鞋 NIKE PEGASUS PREMIUM HQ2592',
     images: ['assets/products/hq2592/hero/11.avif','assets/products/hq2592/hero/03.avif','assets/products/hq2592/hero/04.avif','assets/products/hq2592/hero/05.avif','assets/products/hq2592/hero/06.avif'],
     videos: ['assets/products/hq2592/video/1.mp4','assets/products/hq2592/video/3.mp4','assets/products/hq2592/video/2.mp4'],
-    stripImage: 'assets/products/hq2592/strip.jpg',
     strip: {
-      gallery: 'assets/products/hq2592/hero/01.jpg',
+      gallery: 'assets/products/hq2592/hero/11.avif',
       videoThumb: 'assets/products/hq2592/video-thumb.jpg',
+      extraCells: [{ img: 'assets/products/hq2592/hero/03.avif', label: '搭配' }],
       styles: [
-        { img: 'assets/products/hq2592/hero/03.avif', code: 'HQ2592-017' },
-        { img: 'assets/products/hq2592/hero/04.avif', code: 'HQ2592-019' }
+        { img: 'assets/products/hq2592/hero/04.avif', code: '017 薄雾\n灰/暗蓝黑' },
+        { img: 'assets/products/hq2592/hero/05.avif' }
       ]
     }
   },
@@ -26,7 +26,16 @@ const SPOTLIGHT_PRODUCTS = {
     sold: '已售 100+',
     title: '耐克男子休闲针织卫衣秋冬叠搭舒适拉链口袋连帽衫 NIKE HV0950',
     images: ['assets/products/hv0950/hero/03.avif','assets/products/hv0950/hero/04.avif','assets/products/hv0950/hero/05.avif','assets/products/hv0950/hero/06.avif','assets/products/hv0950/hero/07.avif'],
-    videos: ['assets/products/hv0950/video/1.mp4','assets/products/hv0950/video/2.mp4']
+    videos: ['assets/products/hv0950/video/1.mp4','assets/products/hv0950/video/2.mp4'],
+    strip: {
+      gallery: 'assets/products/hv0950/hero/03.avif',
+      videoThumb: 'assets/products/hv0950/video-thumb.jpg',
+      extraCells: [],
+      styles: [
+        { img: 'assets/products/hv0950/hero/04.avif' },
+        { img: 'assets/products/hv0950/hero/05.avif' }
+      ]
+    }
   }
 };
 
@@ -48,19 +57,18 @@ document.querySelector('#productSold').textContent = product.sold;
 document.querySelector('#productTitle').textContent = product.title;
 
 const strip = document.querySelector('#galleryStrip');
-if (product.stripImage) {
-  strip.classList.add('static');
-  strip.innerHTML = `<img src="${product.stripImage}" alt="图集、视频、搭配和全部款式" />`;
-} else if (product.strip) {
-  strip.innerHTML = [
-    `<div class="gvs-cell"><img src="${product.strip.gallery}" alt="图集" /><span class="gvs-label">图集</span></div>`,
-    `<div class="gvs-cell"><img src="${product.strip.videoThumb}" alt="视频" /><span class="gvs-label">视频</span></div>`,
-    ...product.strip.styles.map((s) => `<div class="gvs-style"><img src="${s.img}" alt="${s.code || product.name}" />${s.code ? `<span>${s.code}</span>` : ''}</div>`),
-    '<span class="gvs-all">全部 ›</span>'
-  ].join('');
-} else {
-  strip.remove();
-}
+strip.innerHTML = [
+  `<button type="button" class="gvs-cell active" data-goto="gallery" aria-label="查看图集"><img src="${product.strip.gallery}" alt="图集" /><span class="gvs-label">图集</span></button>`,
+  `<button type="button" class="gvs-cell" data-goto="video" aria-label="查看视频"><img src="${product.strip.videoThumb}" alt="视频" /><span class="gvs-label">视频</span></button>`,
+  ...(product.strip.extraCells || []).map((c) => `<div class="gvs-cell"><img src="${c.img}" alt="${c.label}" /><span class="gvs-label">${c.label}</span></div>`),
+  ...product.strip.styles.map((s) => `<div class="gvs-style"><img src="${s.img}" alt="${s.code || product.name}" />${s.code ? `<span>${s.code}</span>` : ''}</div>`),
+  '<span class="gvs-all">全部 ›</span>'
+].join('');
+
+const galleryBtn = strip.querySelector('[data-goto="gallery"]');
+const videoBtn = strip.querySelector('[data-goto="video"]');
+galleryBtn.addEventListener('click', () => slides.scrollTo({ left: 0, behavior: 'smooth' }));
+videoBtn.addEventListener('click', () => slides.scrollTo({ left: product.images.length * slides.clientWidth, behavior: 'smooth' }));
 
 const current = document.querySelector('#current');
 document.querySelector('#total').textContent = media.length;
@@ -72,6 +80,9 @@ function activeIndex() {
 function syncPlayback() {
   const active = activeIndex();
   current.textContent = active + 1;
+  const onVideo = active >= product.images.length;
+  galleryBtn.classList.toggle('active', !onVideo);
+  videoBtn.classList.toggle('active', onVideo);
   slides.querySelectorAll('video').forEach((video) => {
     const slideIndex = [...slides.children].indexOf(video.closest('.slide'));
     if (slideIndex === active) {
