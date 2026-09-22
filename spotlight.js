@@ -70,8 +70,7 @@ const videoBtn = strip.querySelector('[data-goto="video"]');
 galleryBtn.addEventListener('click', () => slides.scrollTo({ left: 0, behavior: 'auto' }));
 videoBtn.addEventListener('click', () => slides.scrollTo({ left: product.images.length * slides.clientWidth, behavior: 'auto' }));
 
-const current = document.querySelector('#current');
-document.querySelector('#total').textContent = media.length;
+const counterText = document.querySelector('#counterText');
 
 let ticking = false;
 function activeIndex() {
@@ -79,8 +78,10 @@ function activeIndex() {
 }
 function syncPlayback() {
   const active = activeIndex();
-  current.textContent = active + 1;
   const onVideo = active >= product.images.length;
+  counterText.textContent = onVideo
+    ? `${active - product.images.length + 1}/${product.videos.length} 宝贝讲解`
+    : `${active + 1}/${product.images.length}`;
   galleryBtn.classList.toggle('active', !onVideo);
   videoBtn.classList.toggle('active', onVideo);
   slides.querySelectorAll('video').forEach((video) => {
