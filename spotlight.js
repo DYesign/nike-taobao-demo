@@ -67,8 +67,8 @@ strip.innerHTML = [
 
 const galleryBtn = strip.querySelector('[data-goto="gallery"]');
 const videoBtn = strip.querySelector('[data-goto="video"]');
-galleryBtn.addEventListener('click', () => slides.scrollTo({ left: 0, behavior: 'smooth' }));
-videoBtn.addEventListener('click', () => slides.scrollTo({ left: product.images.length * slides.clientWidth, behavior: 'smooth' }));
+galleryBtn.addEventListener('click', () => slides.scrollTo({ left: 0, behavior: 'auto' }));
+videoBtn.addEventListener('click', () => slides.scrollTo({ left: product.images.length * slides.clientWidth, behavior: 'auto' }));
 
 const current = document.querySelector('#current');
 document.querySelector('#total').textContent = media.length;
