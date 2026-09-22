@@ -61,7 +61,7 @@ strip.innerHTML = [
   `<button type="button" class="gvs-cell active" data-goto="gallery" aria-label="查看图集"><img src="${product.strip.gallery}" alt="图集" /><span class="gvs-label">图集</span></button>`,
   `<button type="button" class="gvs-cell" data-goto="video" aria-label="查看视频"><img src="${product.strip.videoThumb}" alt="视频" /><span class="gvs-label">视频</span></button>`,
   ...(product.strip.extraCells || []).map((c) => `<div class="gvs-cell"><img src="${c.img}" alt="${c.label}" /><span class="gvs-label">${c.label}</span></div>`),
-  ...product.strip.styles.map((s) => `<div class="gvs-style"><img src="${s.img}" alt="${s.code || product.name}" />${s.code ? `<span>${s.code}</span>` : ''}</div>`),
+  ...product.strip.styles.map((s) => `<div class="gvs-style${s.code ? ' has-code' : ''}"><img src="${s.img}" alt="${s.code || product.name}" />${s.code ? `<span>${s.code}</span>` : ''}</div>`),
   '<span class="gvs-all">全部 ›</span>'
 ].join('');
 
