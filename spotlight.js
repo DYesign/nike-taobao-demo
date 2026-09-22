@@ -49,7 +49,7 @@ const media = [
 ];
 slides.innerHTML = media.map((item, index) => item.type === 'img'
   ? `<figure class="slide"><img src="${item.src}" alt="${product.name} ${index + 1}" loading="${index < 2 ? 'eager' : 'lazy'}" decoding="async" ${index === 0 ? 'fetchpriority="high"' : ''} /></figure>`
-  : `<figure class="slide"><video src="${item.src}" muted loop playsinline preload="metadata"></video></figure>`
+  : `<figure class="slide"><video src="${item.src}" poster="${item.src.replace('.mp4', '.jpg')}" muted loop playsinline preload="metadata"></video></figure>`
 ).join('');
 
 document.querySelector('#productPrice').innerHTML = `<small>¥</small>${product.price}`;
