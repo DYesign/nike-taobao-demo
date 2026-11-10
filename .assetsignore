@@ -1,0 +1,7 @@
+**/.git
+**/.DS_Store
+**/node_modules
+.assetsignore
+https_server.py
+nike-pdp-https.service
+wrangler.jsonc
