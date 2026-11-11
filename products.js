@@ -59,7 +59,7 @@ window.NIKE_PRODUCTS = [
     subtitle: '轻盈透气 干爽舒适',
     price: 599,
     sold: '已售 400+',
-    hero: ['assets/products/aeroswift-v79/hero/01.jpg','assets/products/aeroswift-v79/hero/02.jpg','assets/products/aeroswift-v79/hero/03.jpg','assets/products/aeroswift-v79/hero/04.jpg','assets/products/aeroswift-v79/hero/05.jpg','assets/products/aeroswift-v79/hero/06.jpg'],
+    hero: ['assets/products/aeroswift-v79/hero/01.jpg','assets/products/aeroswift-v79/hero/02.jpg','assets/products/aeroswift-v79/hero/03.jpg','assets/products/aeroswift-v79/hero/04.jpg','assets/products/aeroswift-v79/hero/05.jpg'],
     detailParts: ['assets/products/details-v90/aeroswift/01.jpg','assets/products/details-v90/aeroswift/02.jpg','assets/products/details-v90/aeroswift/03.jpg','assets/products/details-v90/aeroswift/04.jpg','assets/products/details-v90/aeroswift/05.jpg','assets/products/details-v90/aeroswift/06.jpg','assets/products/details-v90/aeroswift/07.jpg','assets/products/details-v90/aeroswift/08.jpg','assets/products/details-v90/aeroswift/09.jpg','assets/products/details-v90/aeroswift/10.jpg'],
     appendSharedRecommendations: true,
     detailAlt: 'Nike AeroSwift 完整商品详情',
